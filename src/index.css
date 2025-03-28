@@ -1,0 +1,76 @@
+
+:root {
+  background-color: #000000;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reset all elements to have a clean slate */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+/* Remove default styles for block elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body defaults */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    font-family: sans-serif;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Prevent anchor elements from having default styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove table spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Make sure elements use full width */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
