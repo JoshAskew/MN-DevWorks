@@ -1,71 +1,30 @@
-import { useState, useEffect } from 'react';
+
 import '../styles/Navbar.css'
-import HamburgerOpen from '../assets/OpenHamburger.png';
-import Close from '../assets/close.png';
+
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [hasScrolled, setHasScrolled] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
-    const scrollToSection = (id: string) => {
-        const section = document.getElementById(id);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-            setIsOpen(false); // Close menu on click (mobile)
-        }
-    };
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 0) {
-                setHasScrolled(true);
-            } else {
-                setHasScrolled(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     return (
-        <nav className={`nav-container ${hasScrolled ? 'scrolled' : ''}`}>
-                <span className="title">MN DevWorks</span>
+        <nav className='nav-container'>
+            <span className="title">MN DevWorks</span>
 
-            {/* Hamburger Icon for Mobile */}
-            <div className="hamburger" onClick={toggleMenu}>
-                <img
-                    src={isOpen ? Close : HamburgerOpen}
-                    alt={isOpen ? "Close Menu" : "Open Menu"}
-                    className="hamburger-icon"
-                />
-            </div>
 
             {/* Nav List */}
-            <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
+            <ul className='nav-list'>
                 <li>
-                    <span onClick={() => scrollToSection('About-Book')} className="nav-link">
-                        Home
-                    </span>
-                </li>
-                <li>
-                    <span onClick={() => scrollToSection('Authors')} className="nav-link">
-                        Reviews
-                    </span>
-                </li>
-                <li>
-                    <span onClick={() => scrollToSection('Reviews')} className="nav-link">
-                        Services
-                    </span>
-                </li>
-                <li>
-                    <span onClick={() => scrollToSection('Connect')} className="nav-link">
-                        Galleries
-                    </span>
+                    <button className="nav-button">Start a Conversation</button>
+                    <svg className="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onClick={() => { document.querySelector('.ham')?.classList.toggle('active'); }}>
+                        <path
+                            className="line top"
+                            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                        <path
+                            className="line middle"
+                            d="m 30,50 h 40" />
+                        <path
+                            className="line bottom"
+                            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                    </svg>
                 </li>
             </ul>
         </nav>
