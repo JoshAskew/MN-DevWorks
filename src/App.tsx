@@ -1,14 +1,24 @@
-import React from 'react'
-import Navbar from './components/Navbar.tsx'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Services from './pages/Services';
+import CaseStudy from './pages/CaseStudies';
+import Pricing from './pages/Pricing';
+import Contact from './pages/Contact';
 
-
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <Navbar />
-    
-    </div>
-  )
+function App() {
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/case" element={<CaseStudy />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App 
+export default App;

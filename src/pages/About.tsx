@@ -4,7 +4,7 @@ import '../styles/About.css';
 const About: React.FC = () => {
   return (
     <section className="about-container">
-      <h2 className="about-heading">About MN DevWorks</h2>
+      <h2 className="about-heading">About Devora</h2>
       <p className="about-text">
        About me here
       </p>

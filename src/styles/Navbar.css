@@ -1,6 +1,6 @@
 :root {
     --primary-green: #39d05c;
-    --secondary-color: #3b3b3b;
+    --secondary-color: #282828;
 }
 
 .nav-container {
@@ -11,14 +11,15 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background: var(--secondary-color);
+    background: linear-gradient(to bottom, black, var(--secondary-color));
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .title {
     font-family: Tektur;
     font-size: 34px;
-    padding-left: 100px;
+    padding-left: 5%;
+    padding-top: 2rem;
     letter-spacing: 1px;
     color: white;
 }
@@ -42,10 +43,10 @@ li {
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
+    position: absolute;;
+    right: 35px;
     background: none;
+    margin-right: 5%;
   }
   
   .nav-button::before {
@@ -55,7 +56,7 @@ li {
     top: 25%;
     width: 20px;
     height: 20px;
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(57, 57, 57);
     border-radius: 10px;
     transition: width 0.6s ease-in-out, height 0.6s ease-in-out, left 1s ease-in-out, top 0.6s ease-in-out;
     z-index: -1;
@@ -68,54 +69,159 @@ li {
     top: 0;
   }
 
-  .ham {
+  .burger-wrapper {
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .hamRotate.active {
-    transform: rotate(45deg);
-  }
-  .hamRotate180.active {
-    transform: rotate(180deg);
-  }
-  .line {
-    fill:none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:#000;
-    stroke-width:5.5;
-    stroke-linecap:round;
+}
+
+#meny {
+    background: rgb(56, 56, 56);
+    width: 50rem;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10,2,3,1);
+    transform: translateX(50rem);
+    top: 0;
+    z-index: 0;
+    transition: 0.5s;
+    overflow-y: auto; /* Allows vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Adds smooth scrolling on iOS devices */
+}
+
+#meny.open {
+    transform: translateX(0);
+}
+
+#burger {
+    position: absolute;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#burger > div {
+    height: 2px;
+    background-color: var(--primary-green);
+    transition: 0.6s;
+    z-index: 1;
+}
+
+#burger.open > div:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+#burger.open > div:nth-child(2) {
+    opacity: 0;
+}
+#burger.open > div:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+.menu-item {
+    font-size: 64px;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    font-family: Comfortaa, sans-serif;
+    font-weight: bold;
+}
+
+.menu-item1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    font-family: Comfortaa, sans-serif;
+}
+
+
+  .hover-underline {
+    
+    color: #ffffff;
+    position: relative;
+    
   }
   
-  .ham8 .top {
-    stroke-dasharray: 40 160;
-  }
-  .ham8 .middle {
-    stroke-dasharray: 40 142;
-    transform-origin: 50%;
-    transition: transform 400ms;
-  }
-  .ham8 .bottom {
-    stroke-dasharray: 40 85;
-    transform-origin: 50%;
-    transition: transform 400ms, stroke-dashoffset 400ms;
-  }
-  .ham8.active .top {
-    stroke-dashoffset: -64px;
-  }
-  .ham8.active .middle {
-    stroke-dashoffset: -20px;
-    transform: rotate(90deg);
-  }
-  .ham8.active .bottom {
-    stroke-dashoffset: -64px;
+  .hover-underline::after,
+  .hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--primary-green), #073213);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
   }
   
+  .hover-underline::before {
+    top: -5px;
+    transform-origin: left;
+  }
   
+  .hover-underline:hover::after,
+  .hover-underline:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* Styles for the vertical "Menu" label */
+.vertical-menu-label {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg); /* Rotate the label */
+  writing-mode: vertical-rl; /* Rotate the text */
+  text-orientation: mixed;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: Comfortaa, sans-serif;
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between text and the lines */
+  z-index: 1;
+}
+
+/* Adding vertical lines before and after the text */
+.vertical-menu-label::before,
+.vertical-menu-label::after {
+  content: "";
+  width: 1px;
+  background-color: var(--primary-green);
+  flex-grow: 1;
+}
+
+/* Adjust the length of the lines */
+.vertical-menu-label::before {
+  height: 50vh; /* Adjust this value to extend further up */
+}
+
+.vertical-menu-label::after {
+  height: 50vh; /* Adjust this value to extend further down */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .vertical-menu-label {
+      left: 0.5rem; /* Move it closer on smaller screens */
+      font-size: 1.2rem;
+  }
+
+  .vertical-menu-label::before,
+  .vertical-menu-label::after {
+      height: 40vh; /* Reduce line length on small screens */
+  }
+}
+
   
 
 

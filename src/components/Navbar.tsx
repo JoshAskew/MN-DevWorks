@@ -1,32 +1,62 @@
-
-import '../styles/Navbar.css'
-
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Navbar.css';
+import Modal from '../components/ConversationModal'; // Import the Modal component
 
 const Navbar = () => {
+    const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
+    const [isMenuOpen, setMenuOpen] = useState(false); // State to manage menu visibility
 
+    const openModal = () => setModalOpen(true); // Function to open modal
+    const closeModal = () => setModalOpen(false); // Function to close modal
+    const toggleMenu = () => setMenuOpen(!isMenuOpen); // Function to toggle menu
+    const closeMenu = () => setMenuOpen(false); // Function to close menu on link click
 
     return (
         <nav className='nav-container'>
-            <span className="title">MN DevWorks</span>
-
-
-            {/* Nav List */}
+            <span className="title">Devora</span>
             <ul className='nav-list'>
                 <li>
-                    <button className="nav-button">Start a Conversation</button>
-                    <svg className="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onClick={() => { document.querySelector('.ham')?.classList.toggle('active'); }}>
-                        <path
-                            className="line top"
-                            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-                        <path
-                            className="line middle"
-                            d="m 30,50 h 40" />
-                        <path
-                            className="line bottom"
-                            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-                    </svg>
+                    {/* Button to open the modal */}
+                    <button className="nav-button" onClick={openModal}>
+                        Start a Conversation
+                    </button>
+
+                    {/* Menu Toggle Button */}
+                    <div id="burger" className={isMenuOpen ? 'open' : ''} onClick={toggleMenu}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    {/* Menu Overlay */}
+                    <nav id="meny" className={isMenuOpen ? 'open' : ''}>
+                        <ul>
+                            <div className="vertical-menu-label">
+                                <span>Menu</span>
+                            </div>
+                            <li className='menu-item1 hover-underline'>
+                                <Link to="/about" onClick={closeMenu}>About</Link>
+                            </li>
+                            <li className='menu-item hover-underline'>
+                                <Link to="/services" onClick={closeMenu}>Services</Link>
+                            </li>
+                            <li className='menu-item hover-underline'>
+                                <Link to="/case" onClick={closeMenu}>Case Studies</Link>
+                            </li>
+                            <li className='menu-item hover-underline'>
+                                <Link to="/pricing" onClick={closeMenu}>Pricing</Link>
+                            </li>
+                            <li className='menu-item hover-underline'>
+                                <Link to="/contact" onClick={closeMenu}>Contact</Link>
+                            </li>
+                        </ul>
+                    </nav>
                 </li>
             </ul>
+
+            {/* Modal Component */}
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
         </nav>
     );
 };
