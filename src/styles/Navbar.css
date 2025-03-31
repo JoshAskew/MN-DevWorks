@@ -15,6 +15,7 @@ to {
 }
 
 .nav-container {
+  z-index: 10;
   position: fixed;
   top: 0px;
   padding: 5px;
@@ -86,7 +87,7 @@ li {
 }
 
 #meny {
-  background: rgb(56, 56, 56);
+  background: #282828;
   width: 50rem;
   height: 100vh;
   position: fixed;
