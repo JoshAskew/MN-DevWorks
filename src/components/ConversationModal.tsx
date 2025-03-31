@@ -9,7 +9,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className="modal-left">
                     <h2 className='modal-header'>Lets build your <span className='vision-span'>vision</span> together</h2>
-                    <p className='modal-p-1'>- Devora</p>
+                    <p className='modal-p-1'>BreakP<span className="chevron-span">&lt;&gt;</span>int</p>
                 </div>
 
                 <div className="modal-right">
