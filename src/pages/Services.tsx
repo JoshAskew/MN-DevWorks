@@ -1,10 +1,13 @@
 import React from "react";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles/Services.css';
 import Modal from "../components/ConversationModal";
 import BlurOnOutlinedIcon from '@mui/icons-material/BlurOnOutlined';
 
 const Services: React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
 
     const openModal = () => setModalOpen(true); // Function to open modal

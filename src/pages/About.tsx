@@ -1,13 +1,17 @@
 import React from "react";
 import '../styles/About.css';
 import BlurOnOutlinedIcon from '@mui/icons-material/BlurOnOutlined';
+import { useEffect } from 'react';
 
 const About: React.FC = () => {
+  useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
  
   return (
     <>
       <section className="about-container">
-        <h5 className="about-sub-heading">Together, the sky is our limmit.</h5>
+        <h5 className="about-sub-heading">Together, the sky is our limit.</h5>
         <h1 className="about-heading">
           We are <span className="breakpoint">BreakP<span className="chevron-span">&lt;&gt;</span>int</span>
         </h1>
