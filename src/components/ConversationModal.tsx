@@ -15,6 +15,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                 <div className="modal-right">
                     <form>
                     <p className='modal-p-2'>Fill out the form below to share your details with us, and we’ll get back to you as soon as possible.</p>
+                    <p className="required-info">* Indicates required fields</p>
                         <div>
                             <label htmlFor="name">* Your Name</label>
                             <input type="text" id="name" name="name" required />
@@ -38,7 +39,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                 <button className="close-btn" onClick={onClose}>
                     <img src={Close} alt="Close" />
                 </button>
-                <p className="required-info">* Indicates required fields</p>
+                
             </div>
         </div>
     );
