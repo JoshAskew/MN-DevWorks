@@ -5,7 +5,6 @@
     width: 100%; /* Adjust width to fit content */
     margin: auto;
     color: white;
-    padding-bottom: 200px;
 }
 
 .case-detail-content {
@@ -37,9 +36,9 @@
   }
 
   .case-detail-img {
-    flex: 1; /* Take up equal space */
-    max-width: 50%; /* Ensures it doesn’t overflow */
-    height: auto;
+    display: block;
+    width: 50%; /* Make image responsive */
+    height: 50%;
     object-fit: fill;
     border-radius: 10px;
     margin-right: 48px;
@@ -47,10 +46,79 @@
 
 .case-study-design-container {
     display: flex;
-    justify-content: space-between; /* Space out content evenly */
-    align-items: center;
-    width: 100%;
-    margin: auto;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 48px;
+    margin-right: 48px;
     color: white;
-    padding-bottom: 200px;
+}
+
+.design-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-design-header {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: Comfortaa, sans-serif;
+    padding-bottom: 16px;
+}
+
+.color-palette-img, .typography-img {
+    display: block;
+    height: auto;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.our-goal-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 200px;
+    color: white;
+
+}
+
+.goal-description {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Comfortaa, sans-serif;
+}
+
+.goal-section.image-container {
+    display: flex;
+    flex-direction: row; /* Arrange images side by side */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the images */
+    align-items: center;
+}
+
+.goal-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.goal-header {
+    font-size: 86px;
+    color: #ffffff;
+    font-family: Tektur, sans-serif;
+    margin-top: 200px;
+    padding-bottom: 48px;
+    font-weight: 700;
+}
+
+.goal-img {
+    display: block;
+    min-width:35%;
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 200px;
+    object-fit: fill;
+    border-radius: 15px;
 }
