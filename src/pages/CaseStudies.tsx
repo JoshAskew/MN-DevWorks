@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import '../styles/CaseStudies.css';
 import GodFriends from '../assets/god-friends.png';
-import Globe from '../assets/globe.png';
-import Skull from '../assets/Skull-tune-forge.png'
-import { useEffect } from 'react';
+import Portfolio from '../assets/globe.png';
+import Skull from '../assets/Skull-tune-forge.png';
 
 const CaseStudy: React.FC = () => {
-     useEffect(() => {
-                window.scrollTo(0, 0);
-            }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <section className="case-container">
@@ -19,21 +20,17 @@ const CaseStudy: React.FC = () => {
                 </p>
             </section>
             
-                <div className="case-study-content">
-                    <div className="case-study-item">
+            <div className="case-study-content">
+                <Link to="/case/god-friends" className="case-study-item">
                     <img src={GodFriends} alt="GodFriends" className="case-study-img" />
-                    <div className="case-study-text case-study-textGF">God Friends</div>
-                    </div>
-                    <div className="case-study-item">
-                    <img src={Globe} alt="Globe" className="case-study-img" />
-                    <div className="case-study-text case-study-textP">Portfolio</div>
-                    </div>
-                    <div className="case-study-item">
+                </Link>
+                <Link to="/case/globe" className="case-study-item">
+                    <img src={Portfolio} alt="Globe" className="case-study-img" />
+                </Link>
+                <Link to="/case/skull" className="case-study-item">
                     <img src={Skull} alt="Skull" className="case-study-img" />
-                    <div className="case-study-text case-study-textTF">TuneForge</div>
-                    </div>
-                </div>
-            
+                </Link>
+            </div>
         </>
     );
 };
