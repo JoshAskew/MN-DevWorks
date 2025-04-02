@@ -4,8 +4,8 @@ import GodFriends from '../assets/GodFriends 2.png';
 import Globe from '../assets/Globe.png';
 import Skull from '../assets/Skull-tune-forge.png'
 import GodColors from '../assets/godfriendscolors.png'
-import GodMobile1 from '../assets/godfriendsmobile1.png'
-import GodMobile2 from '../assets/godfriendsmobile7.png'
+import GodMobile1 from '../assets/GodFriendsMobile1.png'
+import GodMobile2 from '../assets/GodFriendsMobile7.png'
 
 const caseStudies = {
     "god-friends": {

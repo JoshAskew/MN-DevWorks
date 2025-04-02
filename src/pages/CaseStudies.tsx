@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import '../styles/CaseStudies.css';
 import GodFriends from '../assets/god-friends.png';
-import Portfolio from '../assets/globe.png';
+import Portfolio from '../assets/Globe.png';
 import Skull from '../assets/Skull-tune-forge.png';
 
 const CaseStudy: React.FC = () => {
