@@ -1,6 +1,7 @@
 .case-detail-container {
     display: flex;
     padding-top: 200px;
+    padding-bottom: 200px;
     justify-content: space-between; /* Space out content evenly */
     width: 100%; /* Adjust width to fit content */
     margin: auto;
@@ -32,7 +33,7 @@
     font-size: 18px;
     color: #ffffff;
     font-family: Comfortaa, sans-serif;
-    padding-bottom: 200px;
+    
   }
 
   .case-detail-img {

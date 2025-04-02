@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../styles/CaseStudies.css';
 import GodFriends from '../assets/god-friends.png';
 import Portfolio from '../assets/Globe.png';
-import Skull from '../assets/Skull-tune-forge.png';
+import Aline from '../assets/Aline.png';
 
 const CaseStudy: React.FC = () => {
     useEffect(() => {
@@ -27,8 +27,8 @@ const CaseStudy: React.FC = () => {
                 <Link to="/case/globe" className="case-study-item">
                     <img src={Portfolio} alt="Globe" className="case-study-img" />
                 </Link>
-                <Link to="/case/skull" className="case-study-item">
-                    <img src={Skull} alt="Skull" className="case-study-img" />
+                <Link to="/case/aline" className="case-study-item">
+                    <img src={Aline} alt="Aline" className="case-study-img" />
                 </Link>
             </div>
         </>

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import '../styles/CaseStudyDetail.css'
 import GodFriends from '../assets/GodFriends 2.png';
 import Globe from '../assets/Globe.png';
-import Skull from '../assets/Skull-tune-forge.png';
+import AlineHome from '../assets/AlineHome.png';
 import GodColors from '../assets/godfriendscolors.png';
 import GodMobile1 from '../assets/GodFriendsMobile1.png';
 import GodMobile2 from '../assets/GodFriendsMobile7.png';
@@ -11,6 +11,14 @@ import ReactIcon from '../assets/ReactIcon.png';
 import ViteIcon from '../assets/ViteIcon.png';
 import FormSubmitIcon from '../assets/FormSubmitIcon.png';
 import NodeIcon from '../assets/NodeIcon.png';
+import ChakraIcon from '../assets/ChakraIcon.png';
+import PortfolioColors from '../assets/PortfolioColors.png';
+import PortfolioMobile1 from '../assets/PortfolioMobile1.png';
+import PortfolioMobile2 from '../assets/PortfolioMobile2.png';
+import ExpressIcon from '../assets/ExpressIcon.png';
+import MongoIcon from '../assets/MongoIcon.png';
+import AlineMobie1 from '../assets/AlineMobile1.png';
+import AlineMobile2 from '../assets/AlineMobile2.png';
 
 const caseStudies = {
     "god-friends": {
@@ -34,39 +42,39 @@ const caseStudies = {
     },
     "globe": {
         title: "Portfolio",
-        description: "A case study about the Portfolio project...",
+        description: "We developed a dynamic portfolio website showcasing their skills and projects, built with a modern tech stack to ensure performance and scalability. Leveraging React for a responsive and component-driven front-end, we integrated Chakra UI to craft a sleek, accessible, and visually consistent design system. The development process was streamlined with Vite, enabling lightning-fast builds and an efficient workflow. This portfolio not only highlights our technical expertise but also demonstrates our ability to combine cutting-edge tools to deliver a seamless and engaging user experience.",
         image: Globe,
-        colorimage: "",
-        typography: "",
-        goal: "",
-        goalimg: '',
-        goalimg2: '',
+        colorimage: PortfolioColors,
+        typography: PortfolioColors,
+        goal: "The goal of our group project was to collaboratively design a professional web developer portfolio that showcases our collective skills, projects, and expertise, while prioritizing accessibility and an exceptional user experience across all devices. The portfolio’s purpose is to provide potential clients and employers with a compelling, cohesive representation of our technical proficiency and creative problem-solving abilities, establishing our credibility as a team in the competitive web development landscape. To enhance engagement, we incorporated subtle animations—such as smooth hover effects, gentle fades for section transitions, and micro-interactions on buttons—to catch the eye and add a layer of polish without overwhelming the user. By ensuring the site is fully responsive across multiple screen sizes—desktops, tablets, and smartphones—we guaranteed seamless functionality and visual consistency, enabling users to explore our work effortlessly on any device. This blend of responsiveness and strategic animation underscores our shared commitment to delivering adaptable, user-focused solutions that captivate and meet diverse needs.",
+        goalimg: PortfolioMobile1,
+        goalimg2: PortfolioMobile2,
         techstackimg: ReactIcon,
-        techstacktext: "",
-        techstack2img: "",
-        techstack2text: "",
-        techstack3img: "",
-        techstack3text: "",
-        techstack4img: "",
-        techstack4text: ""
+        techstacktext: "React",
+        techstack2img: ViteIcon,
+        techstack2text: "Vite",
+        techstack3img: NodeIcon,
+        techstack3text: "Node.js",
+        techstack4img: ChakraIcon,
+        techstack4text: "Chakra UI"
     },
-    "skull": {
-        title: "Tune Forge",
-        description: "A case study about the Skull Forge project...",
-        image: Skull,
+    "aline": {
+        title: "Aline Events",
+        description: "Our team built a ticket purchasing app that simplifies event access with a secure database for user data and authentication, ensuring privacy and smooth logins. Integrated with the Ticketmaster API, it offers real-time event browsing and ticket purchasing. The app combines a user-friendly interface with a robust back end for a secure, efficient experience.",
+        image: AlineHome,
         colorimage: "",
         typography: "",
-        goal: "",
-        goalimg: '',
-        goalimg2: '',
+        goal: "The goal of this case study project was to develop an intuitive event ticket purchasing application that enhances the user experience by integrating the Ticketmaster API for seamless access to a wide range of events. The application allows users to log in securely, browse events, purchase tickets, and save events or tickets of interest for future reference, promoting personalization and convenience. Additionally, we incorporated a weather-checking feature, enabling users to view real-time weather conditions for the event’s location, ensuring they can plan accordingly for a comfortable experience. This holistic approach simplifies the ticket-buying process while providing practical insights, delivering an engaging and user-centric platform tailored to event-goers’ needs.",
+        goalimg: AlineMobie1,
+        goalimg2: AlineMobile2,
         techstackimg: ReactIcon,
-        techstacktext: "",
-        techstack2img: "",
-        techstack2text: "",
-        techstack3img: "",
-        techstack3text: "",
-        techstack4img: "",
-        techstack4text: ""
+        techstacktext: "React",
+        techstack2img: ExpressIcon,
+        techstack2text: "Express JS",
+        techstack3img: MongoIcon,
+        techstack3text: "MongoDB",
+        techstack4img: NodeIcon,
+        techstack4text: "Node.js"
     }
 };
 

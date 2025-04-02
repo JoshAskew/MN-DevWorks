@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <nav className='nav-container'>
-            <span className="title">BreakP<span className="chevron-span">&lt;&gt;</span>int</span>
+            <Link to='/' className="title">BreakP<span className="chevron-span">&lt;&gt;</span>int</Link>
             <ul className='nav-list'>
                 <li>
                     {/* Button to open the modal */}
@@ -35,6 +35,9 @@ const Navbar = () => {
                             <div className="vertical-menu-label">
                                 <span>Menu</span>
                             </div>
+                            <li className='menu-item hover-underline'>
+                                <Link to="/" onClick={closeMenu}>Home</Link>
+                            </li>
                             <li className='menu-item hover-underline'>
                                 <Link to="/about" onClick={closeMenu}>About</Link>
                             </li>

@@ -7,12 +7,14 @@ import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import CaseStudyDetail from './pages/CaseStudyDetail';
+import Home from './pages/Home';
 
 function App() {
     return (
         <Router>
             <Navbar />
             <Routes>
+                <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/case" element={<CaseStudy />} />
