@@ -228,11 +228,11 @@ li {
 }
 
 .vertical-menu-label::before {
-  height: 50vh;
+  height: 90vh;
 }
 
 .vertical-menu-label::after {
-  height: 50vh;
+  height: 100vh;
 }
 
 @media (max-width: 768px) {
