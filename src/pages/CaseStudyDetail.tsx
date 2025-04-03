@@ -20,6 +20,10 @@ import MongoIcon from '../assets/MongoIcon.png';
 import AlineMobie1 from '../assets/AlineMobile1.png';
 import AlineMobile2 from '../assets/AlineMobile2.png';
 import AlineColors from '../assets/AlineColors.png';
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const caseStudies = {
     "god-friends": {
@@ -83,6 +87,26 @@ const CaseStudyDetail = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    useEffect(() => {
+        gsap.utils.toArray(".slide-in").forEach((el: any) => {
+            gsap.fromTo(el,
+                { x: -100, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 90%",
+                        toggleActions: "play none none none",
+                    }
+                }
+            );
+        });
+    }, []);
+
     const { id } = useParams<{ id: keyof typeof caseStudies }>();
     const study = id ? caseStudies[id] : undefined;
 
@@ -92,65 +116,65 @@ const CaseStudyDetail = () => {
 
     return (
         <>
-            <section className="case-detail-container">
-                <div className="case-detail-content">
-                    <h5 className="case-study-sub-heading">Case Study</h5>
-                    <h1 className="case-study-heading">
+            <section className="case-detail-container slide-in">
+                <div className="case-detail-content slide-in">
+                    <h5 className="case-study-sub-heading slide-in">Case Study</h5>
+                    <h1 className="case-study-heading slide-in">
                         {study.title}
                     </h1>
-                    <p className="case-study-description">
+                    <p className="case-study-description slide-in">
                         {study.description}
                     </p>
                 </div>
-                <img src={study.image} alt={study.title} className="case-detail-img" />
+                <img src={study.image} alt={study.title} className="case-detail-img slide-in" />
             </section>
 
-            <section className="case-study-design-container">
-                <div className="design-section">
-                    <h2 className="case-study-design-header">Color Palette</h2>
-                    <img src={study.colorimage} className="color-palette-img" alt="Color Palette" />
+            <section className="case-study-design-container slide-in">
+                <div className="design-section slide-in">
+                    <h2 className="case-study-design-header slide-in">Color Palette</h2>
+                    <img src={study.colorimage} className="color-palette-img slide-in" alt="Color Palette" />
                 </div>
-                <div className="design-section">
-                    <h2 className="case-study-design-header">Typography</h2>
-                    <img src={study.typography} className="typography-img" alt="Typography" />
+                <div className="design-section slide-in">
+                    <h2 className="case-study-design-header slide-in">Typography</h2>
+                    <img src={study.typography} className="typography-img slide-in" alt="Typography" />
                 </div>
             </section>
             
 
-            <h2 className="case-study-tech-header">Tech Stack</h2>
-            <section className="case-study-tech-container">
-                <div className="tech-section">
-                    <div className="tech-item">
-                        <p className="tech-description">{study.techstacktext}</p>
-                        <img src={study.techstackimg} className="tech-image" />
+            <h2 className="case-study-tech-header slide-in">Tech Stack</h2>
+            <section className="case-study-tech-container slide-in">
+                <div className="tech-section slide-in">
+                    <div className="tech-item slide-in">
+                        <p className="tech-description slide-in">{study.techstacktext}</p>
+                        <img src={study.techstackimg} className="tech-image slide-in" />
                     </div>
-                    <div className="tech-item">
-                        <p className="tech-description">{study.techstack2text}</p>
-                        <img src={study.techstack2img} className="tech-image" />
+                    <div className="tech-item slide-in">
+                        <p className="tech-description slide-in">{study.techstack2text}</p>
+                        <img src={study.techstack2img} className="tech-image slide-in" />
                     </div>
-                    <div className="tech-item">
-                        <p className="tech-description">{study.techstack3text}</p>
-                        <img src={study.techstack3img} className="tech-image" />
+                    <div className="tech-item slide-in">
+                        <p className="tech-description slide-in">{study.techstack3text}</p>
+                        <img src={study.techstack3img} className="tech-image slide-in" />
                     </div>
-                    <div className="tech-item">
-                        <p className="tech-description">{study.techstack4text}</p>
-                        <img src={study.techstack4img} className="tech-image" />
+                    <div className="tech-item slide-in">
+                        <p className="tech-description slide-in">{study.techstack4text}</p>
+                        <img src={study.techstack4img} className="tech-image slide-in" />
                     </div>
                 </div>
             </section>
 
 
 
-            <section className="our-goal-container">
-                <div className="goal-section">
-                    <h2 className="goal-header">Our Goal</h2>
-                    <p className='goal-description'>
+            <section className="our-goal-container slide-in">
+                <div className="goal-section slide-in">
+                    <h2 className="goal-header slide-in">Our Goal</h2>
+                    <p className='goal-description v'>
                         {study.goal}
                     </p>
                 </div>
-                <div className="goal-section image-container">
-                    <img src={study.goalimg} alt="Goal Image" className="goal-img" />
-                    <img src={study.goalimg2} alt="Goal Image" className="goal-img" />
+                <div className="goal-section image-container slide-in">
+                    <img src={study.goalimg} alt="Goal Image" className="goal-img slide-in" />
+                    <img src={study.goalimg2} alt="Goal Image" className="goal-img slide-in" />
                 </div>
             </section>
 
