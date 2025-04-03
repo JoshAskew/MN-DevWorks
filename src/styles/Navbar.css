@@ -27,13 +27,11 @@ to {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.title {
+.logo {
   font-family: Tektur;
-  font-size: 34px;
+  width: 250px;
   padding-left: 5%;
-  padding-top: 2rem;
-  letter-spacing: 1px;
-  color: white;
+  padding-top: 2%;
 }
 
 .nav-list {

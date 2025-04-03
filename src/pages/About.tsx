@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/About.css';
 import BlurOnOutlinedIcon from '@mui/icons-material/BlurOnOutlined';
 import { useEffect } from 'react';
+import BreakPointLogo from '../assets/breakpoint-logo-white.svg';
 
 const About: React.FC = () => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const About: React.FC = () => {
       <section className="about-container">
         <h5 className="about-sub-heading">Together, the sky is our limit.</h5>
         <h1 className="about-heading">
-          We are <span className="breakpoint">BreakP<span className="chevron-span">&lt;&gt;</span>int</span>
+          We are <img src={BreakPointLogo} className="logo-md" alt="BreakPoint Logo" />
         </h1>
         <p className="about-text">
           We’re a small team of passionate web developers who love bringing ideas to life. Whether it’s a sleek portfolio, a custom web app, or a full-scale business website, we focus on creating fast, modern, and user-friendly experiences. We don’t just build websites—we build solutions that work for you. If you have a vision, we’re here to make it happen. Let’s create something awesome together!

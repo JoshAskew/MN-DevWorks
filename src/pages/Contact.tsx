@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
             <div className="contact-tile-container">
                 <ul className="contact-list">
                     <li className="contact-tile">
-                        <a href="#">
+                        <a href="https://www.facebook.com/josh.askew.71/" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-facebook" aria-hidden="true"></i>
                             <span> - Facebook</span>
                         </a>

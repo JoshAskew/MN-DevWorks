@@ -1,5 +1,6 @@
 import '../styles/ConversationModal.css'; // Import your CSS styles
 import Close from '../assets/close.png'; // Import the close image
+import BreakPointLogo from '../assets/breakpoint-logo-white.svg'; // Import the logo image
 
 const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
     if (!isOpen) return null;
@@ -9,7 +10,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className="modal-left">
                     <h2 className='modal-header'>Lets build your <span className='vision-span'>vision</span> together</h2>
-                    <p className='modal-p-1'>BreakP<span className="chevron-span">&lt;&gt;</span>int</p>
+                    <img src={BreakPointLogo} className="logo-md-form" alt="BreakPoint Logo" />
                 </div>
 
                 <div className="modal-right">

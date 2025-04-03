@@ -21,7 +21,7 @@ const Services: React.FC = () => {
                     What we do
                 </h1>
                 <p className="services-text">
-                    At  <span className="breakpoint">BreakP<span className="chevron-span">&lt;&gt;</span>int</span>, we specialize in creating custom web solutions tailored to your unique needs. From sleek websites to powerful web apps, our team combines innovative design, cutting-edge technology, and a user-first approach to deliver exceptional digital experiences. We’re here to turn your ideas into impactful online solutions that drive results and elevate your brand.
+                    At  breakpoint, we specialize in creating custom web solutions tailored to your unique needs. From sleek websites to powerful web apps, our team combines innovative design, cutting-edge technology, and a user-first approach to deliver exceptional digital experiences. We’re here to turn your ideas into impactful online solutions that drive results and elevate your brand.
                 </p>
 
                 <button className="convo-button" onClick={openModal}>

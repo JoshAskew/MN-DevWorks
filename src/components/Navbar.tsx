@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import Modal from '../components/ConversationModal'; // Import the Modal component
+import BreakPointLogo from '../assets/breakpoint-logo-white.svg'; 
 
 const Navbar = () => {
     const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
@@ -14,7 +15,7 @@ const Navbar = () => {
 
     return (
         <nav className='nav-container'>
-            <Link to='/' className="title">BreakP<span className="chevron-span">&lt;&gt;</span>int</Link>
+            <img src={BreakPointLogo} className='logo' />
             <ul className='nav-list'>
                 <li>
                     {/* Button to open the modal */}

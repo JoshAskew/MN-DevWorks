@@ -15,11 +15,11 @@
   .chevron-span {
     color: #39d05c;
   }
-
-  .breakpoint {
-    font-weight: normal;
-  }
   
+  .logo-md {
+    width: 500px;
+  }
+
   .about-heading {
     font-size: 86px;
     color: #ffffff;
