@@ -19,6 +19,7 @@ import ExpressIcon from '../assets/ExpressIcon.png';
 import MongoIcon from '../assets/MongoIcon.png';
 import AlineMobie1 from '../assets/AlineMobile1.png';
 import AlineMobile2 from '../assets/AlineMobile2.png';
+import AlineColors from '../assets/AlineColors.png';
 
 const caseStudies = {
     "god-friends": {
@@ -62,8 +63,8 @@ const caseStudies = {
         title: "Aline Events",
         description: "Our team built a ticket purchasing app that simplifies event access with a secure database for user data and authentication, ensuring privacy and smooth logins. Integrated with the Ticketmaster API, it offers real-time event browsing and ticket purchasing. The app combines a user-friendly interface with a robust back end for a secure, efficient experience.",
         image: AlineHome,
-        colorimage: "",
-        typography: "",
+        colorimage: AlineColors,
+        typography: AlineColors,
         goal: "The goal of this case study project was to develop an intuitive event ticket purchasing application that enhances the user experience by integrating the Ticketmaster API for seamless access to a wide range of events. The application allows users to log in securely, browse events, purchase tickets, and save events or tickets of interest for future reference, promoting personalization and convenience. Additionally, we incorporated a weather-checking feature, enabling users to view real-time weather conditions for the event’s location, ensuring they can plan accordingly for a comfortable experience. This holistic approach simplifies the ticket-buying process while providing practical insights, delivering an engaging and user-centric platform tailored to event-goers’ needs.",
         goalimg: AlineMobie1,
         goalimg2: AlineMobile2,

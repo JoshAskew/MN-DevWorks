@@ -8,9 +8,14 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import CaseStudyDetail from './pages/CaseStudyDetail';
 import Home from './pages/Home';
+import './index.css';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
-    return (
+    return (<>
+    <CustomCursor />
+        <div className="cursor-dot"></div>
+        <div className="cursor-outline"></div>
         <Router>
             <Navbar />
             <Routes>
@@ -24,6 +29,7 @@ function App() {
             </Routes>
             <Footer />
         </Router>
+        </>
     );
 }
 

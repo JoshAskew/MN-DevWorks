@@ -1,6 +1,6 @@
 :root {
   --primary-green: #39d05c;
-  --secondary-color: #282828ed;
+  --secondary-color: #282828;
 }
 
 @keyframes slideIn {
