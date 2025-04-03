@@ -39,7 +39,7 @@ const Services: React.FC = () => {
     const closeModal = () => setModalOpen(false); // Function to close modal
     return (
         <>
-            <section className="services-container slide-in">
+            <section className="services-container">
                 <h5 className="services-sub-heading slide-in">Turning Ideas into Digital Realities</h5>
                 <h1 className="services-heading slide-in">
                     What we do
@@ -51,8 +51,8 @@ const Services: React.FC = () => {
                 <button className="convo-button slide-in" onClick={openModal}>
                     Start a Conversation
                 </button>
-                <section className="services-summary slide-in">
-                    <h2 className="services-summary-heading slide-in">Our Services</h2>
+                <section className="services-summary">
+                    <h2 className="services-summary-heading">Our Services</h2>
                     <p className="services-summary-text slide-in">
                         We offer a range of services to help you succeed online. Whether you need a stunning website, a powerful web application, or ongoing support, we’ve got you covered.
                     </p>
