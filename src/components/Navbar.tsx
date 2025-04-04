@@ -7,7 +7,6 @@ import BreakPointLogo from '../assets/breakpoint-logo-white.svg';
 const Navbar = () => {
     const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
     const [isMenuOpen, setMenuOpen] = useState(false); // State to manage menu visibility
-
     const openModal = () => setModalOpen(true); // Function to open modal
     const closeModal = () => setModalOpen(false); // Function to close modal
     const toggleMenu = () => setMenuOpen(!isMenuOpen); // Function to toggle menu
@@ -15,7 +14,9 @@ const Navbar = () => {
 
     return (
         <nav className='nav-container'>
+            <Link to="/">
             <img src={BreakPointLogo} className='logo' />
+            </Link>
             <ul className='nav-list'>
                 <li>
                     {/* Button to open the modal */}
@@ -47,9 +48,6 @@ const Navbar = () => {
                             </li>
                             <li className='menu-item hover-underline'>
                                 <Link to="/case" onClick={closeMenu}>Case Studies</Link>
-                            </li>
-                            <li className='menu-item hover-underline'>
-                                <Link to="/pricing" onClick={closeMenu}>Pricing</Link>
                             </li>
                             <li className='menu-item hover-underline'>
                                 <Link to="/contact" onClick={closeMenu}>Contact</Link>

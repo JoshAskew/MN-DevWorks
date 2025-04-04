@@ -1,3 +1,10 @@
+:root {
+    --malachite: #39d05c;
+    --columbia-blue: #A6BEC9;
+    --raisin-black: #282828;
+    --text-color: #ffffff;
+  }
+
 .case-detail-container {
     display: flex;
     padding-top: 200px;
@@ -16,7 +23,7 @@
 
 .case-study-sub-heading {
     font-size: 24px;
-    color: #adadad;
+    color: var(--columbia-blue);
     font-family: Comfortaa, sans-serif;
     padding-bottom: 10px;
   }
@@ -107,7 +114,7 @@
 
 .case-study-design-header {
     font-size: 24px;
-    color: #ffffff;
+    color: var(--columbia-blue);
     font-family: Comfortaa, sans-serif;
     padding-bottom: 16px;
 }
@@ -128,7 +135,6 @@
     margin-right: 48px;
     margin-bottom: 200px;
     color: white;
-
 }
 
 .goal-description {
@@ -139,6 +145,7 @@
 
 .goal-section.image-container {
     display: flex;
+    margin-top: 48px;
     flex-direction: row; /* Arrange images side by side */
     gap: 20px; /* Space between images */
     justify-content: center; /* Center the images */

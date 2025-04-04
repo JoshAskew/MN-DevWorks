@@ -19,19 +19,19 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                     <p className="required-info">* Indicates required fields</p>
                         <div>
                             <label htmlFor="name">* Your Name</label>
-                            <input type="text" id="name" name="name" required />
+                            <input placeholder='Full Name' type="text" id="name" name="name" required />
                         </div>
                         <div>
                             <label>* Company name</label>
-                            <input type="text" id="companyName" name="companyName" required />
+                            <input placeholder='Company' type="text" id="companyName" name="companyName" required />
                         </div>
                         <div>
                             <label htmlFor="email">* Email</label>
-                            <input type="email" id="email" name="email" required />
+                            <input placeholder='Valid Email' type="email" id="email" name="email" required />
                         </div>
                         <div>
                             <label htmlFor="message">* Describe your vision</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <textarea placeholder='Share your vision with us! Describe your goals, ideas, and any specific details you would like to bring to life.' id="message" name="message" required></textarea>
                         </div>
                         <button type="submit">Send Message</button>
                     </form>

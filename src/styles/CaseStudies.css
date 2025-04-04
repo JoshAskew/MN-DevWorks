@@ -1,3 +1,10 @@
+:root {
+  --malachite: #39d05c;
+  --columbia-blue: #A6BEC9;
+  --raisin-black: #282828;
+  --text-color: #ffffff;
+}
+
 .case-container {
     padding-top: 200px;
     width: 60%;
@@ -5,7 +12,7 @@
   
   .case-sub-heading {
     font-size: 24px;
-    color: #adadad;
+    color: var(--columbia-blue);
     font-family: Comfortaa, sans-serif;
     padding-left: 96px;
     padding-bottom: 10px;

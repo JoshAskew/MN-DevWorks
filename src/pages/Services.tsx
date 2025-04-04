@@ -2,9 +2,10 @@ import React from "react";
 import { useState, useEffect } from 'react';
 import '../styles/Services.css';
 import Modal from "../components/ConversationModal";
-import BlurOnOutlinedIcon from '@mui/icons-material/BlurOnOutlined';
+// import BlurOnOutlinedIcon from '@mui/icons-material/BlurOnOutlined';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BreakpointIcon from '../assets/BreakpointIcon.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -98,20 +99,37 @@ const Services: React.FC = () => {
                     <ul className="core-values-list-items slide-in">
                         <li className="core-values-list-item slide-in">
                             <div className="CV-list-item-header slide-in">
-                                <BlurOnOutlinedIcon className="blur-icon slide-in" />
+                               <img src= {BreakpointIcon} alt="Breakpoint Icon" className="blur-icon slide-in" />
                                 <span>Passion</span>
                             </div>
                             <br /><p className="CV-list-item-text slide-in">
                                 Our team’s passion for development and design drives everything we do. We don’t just build websites—we craft digital solutions that empower small businesses to thrive online. From the first idea to the final product, we’re with you every step of the way, ensuring that your website not only looks amazing but performs flawlessly. </p>
                         </li>
 
-                        <li className="core-values-list-item"><span className="CV-list-item-header slide-in"><BlurOnOutlinedIcon className="blur-icon" />Intimate</span><br></br><p className="CV-list-item-text slide-in">
-                            We believe in making every project personal. Your business isn’t just another job for us—it’s a partnership. With our hands-on approach, we take the time to truly understand your needs, ensuring that the solutions we create reflect your brand’s unique identity and goals.</p></li>
+                        <li className="core-values-list-item slide-in">
+                            <div className="CV-list-item-header slide-in">
+                               <img src= {BreakpointIcon} alt="Breakpoint Icon" className="blur-icon slide-in" />
+                                <span>Intimate</span>
+                            </div>
+                            <br /><p className="CV-list-item-text slide-in">
+                            We believe in making every project personal. Your business isn’t just another job for us—it’s a partnership. With our hands-on approach, we take the time to truly understand your needs, ensuring that the solutions we create reflect your brand’s unique identity and goals. </p>
+                        </li>
 
-                        <li className="core-values-list-item slide-in"><span className="CV-list-item-header slide-in"><BlurOnOutlinedIcon className="blur-icon slide-in" />Cost Effective</span><br></br><p className="CV-list-item-text slide-in">
+
+                        <li className="core-values-list-item slide-in">
+                        <div className="CV-list-item-header slide-in">
+                        <img src= {BreakpointIcon} alt="Breakpoint Icon" className="blur-icon slide-in" />
+                            <span className="CV-list-item-header slide-in">Cost Effective</span>
+                            </div>
+                            <br /><p className="CV-list-item-text slide-in">
                             We pride ourselves on offering competitive pricing without compromising on quality. Whether you're launching your first website or upgrading your existing digital presence, we’re here to create solutions that work for you—at a price that makes sense for your business.</p></li>
 
-                        <li className="core-values-list-item"><span className="CV-list-item-header slide-in"><BlurOnOutlinedIcon className="blur-icon" />Partners</span><br></br><p className="CV-list-item-text slide-in">
+                        <li className="core-values-list-item">
+                        <div className="CV-list-item-header slide-in">
+                        <img src= {BreakpointIcon} alt="Breakpoint Icon" className="blur-icon slide-in" />
+                            <span className="CV-list-item-header slide-in">Partners</span>
+                            </div>
+                            <br></br><p className="CV-list-item-text slide-in">
                             Your business isn’t just another project for us; it's a partnership. By choosing us, you’re investing in a team that is dedicated to your success, all while keeping costs affordable. Join the many small businesses and startups we've helped grow, and let’s build something exceptional together.</p></li>
                     </ul>
                 </div>

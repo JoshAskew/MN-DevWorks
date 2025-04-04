@@ -18,7 +18,7 @@
 .modal-content {
     background: rgb(44, 44, 44);
     display: flex;
-    padding: 100px;
+    padding: 48px;
     width: 80%;
     height: 100vh;
     border-radius: 4px;
@@ -65,14 +65,14 @@
 /* Left Section - Informational */
 .modal-left {
     flex: 1;
-    padding-right: 50px;
+    padding-right: 48px;
     border-right: 1px solid #ccc;
 }
 
 /* Right Section - Form */
 .modal-right {
     flex: 2;
-    padding-left: 50px;
+    padding-left: 48px;
 }
 
 .modal-right form div {
@@ -126,7 +126,6 @@
 .modal-header {
     font-size: 64px;
     align-items: center;
-    margin-bottom: 60px;
     color: #ffffff;
     line-height: 1.2;
     font-family: Comfortaa, sans-serif;
@@ -162,5 +161,5 @@
 }
 
 .logo-md-form {
-    margin-top: 180px;
+    margin-top: 100px;
 }

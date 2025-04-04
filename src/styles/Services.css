@@ -1,3 +1,10 @@
+:root {
+  --malachite: #39d05c;
+  --columbia-blue: #A6BEC9;
+  --raisin-black: #282828;
+  --text-color: #ffffff;
+}
+
 .services-container {
     padding-top: 200px;
     width: 50%;
@@ -5,7 +12,7 @@
 
   .services-sub-heading {
     font-size: 24px;
-    color: #adadad;
+    color: var(--columbia-blue);
     font-family: Comfortaa, sans-serif;
     padding-left: 96px;
     padding-bottom: 10px;
@@ -35,14 +42,13 @@
   .convo-button {
     font-family: Tektur;
     font-size: 20px;
-    color: var(--primary-green);
+    color: var(--malachite);
     text-decoration: none;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
     position: absolute;
     left: 98px;
-   
     background: none;
     margin-right: 5%;
   }
@@ -107,39 +113,12 @@
     line-height: 1.5;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .why-us {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 48px 0 48px;
-
   }
-
  
 .core-values-container {
   z-index: 0;
@@ -259,4 +238,6 @@
     color: #39d05c;
     margin-left: 44px;
     animation: spin 4s linear infinite;
+    width: 20px;
+    margin-top: -15px;
   }

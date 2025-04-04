@@ -51,8 +51,8 @@ const Contact: React.FC = () => {
                     Have a project in mind or need a digital upgrade? We’d love to hear from you! Whether you have questions, need a quote, or just want to chat about your vision, we’re here to help. Reach out today, and let’s build something amazing together—without the hefty price tag.
                 </p>
             </section>
-            <div className="contact-tile-container slide-in">
-                <ul className="contact-list slide-in">
+            <div className="slide-in">
+                <ul className="contact-list slide-in contact-tile-container">
                     <li className="contact-tile slide-in">
                         <a href="https://www.facebook.com/josh.askew.71/" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-facebook slide-in" aria-hidden="true"></i>
