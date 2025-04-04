@@ -48,7 +48,7 @@ const Services: React.FC = () => {
                     At  breakpoint, we specialize in creating custom web solutions tailored to your unique needs. From sleek websites to powerful web apps, our team combines innovative design, cutting-edge technology, and a user-first approach to deliver exceptional digital experiences. We’re here to turn your ideas into impactful online solutions that drive results and elevate your brand.
                 </p>
                 <button className="convo-button slide-in" onClick={openModal}>
-                    Start a Conversation
+                    Get a Free Quote
                 </button>
                 <section className="services-summary">
                     <h2 className="services-summary-heading">Our Services</h2>
