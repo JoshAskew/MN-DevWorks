@@ -14,7 +14,10 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                 </div>
 
                 <div className="modal-right">
-                    <form>
+                    <form  action="https://formsubmit.co/Joshua.Askew43@gmail.com"
+  method="POST">
+    <input type="hidden" name="_next" value="https://breakpointdev.com/success" />
+    <input type="hidden" name="_captcha" value="false" />
                     <p className='modal-p-2'>Fill out the form below to share your details with us, and we’ll get back to you as soon as possible.</p>
                     <p className="required-info">* Indicates required fields</p>
                         <div>
