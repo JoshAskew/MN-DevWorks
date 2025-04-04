@@ -16,17 +16,6 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                 <div className="modal-right">
                     <form action="https://formsubmit.co/Joshua.Askew43@gmail.com"
                         method="POST">
-                        <input type="hidden" name="_autoresponse" value="Thank you for getting in touch with us! We’ve received your message and appreciate the time you took to share your vision with us.
-
-                        Our team is currently reviewing your submission, and we will get back to you as soon as possible with the next steps. We’re excited about the opportunity to work with you and bring your ideas to life!
-
-                        If you have any immediate questions or additional details to share, feel free to reply to this email.
-
-                        Looking forward to collaborating with you!
-
-                        Best regards,
-                        The Breakpoint Team "></input>
-                        <input type="hidden" name="_captcha" value="false" />
                         <p className='modal-p-2'>Fill out the form below to share your details with us, and we’ll get back to you as soon as possible.</p>
                         <p className="required-info">* Indicates required fields</p>
                         <div>
