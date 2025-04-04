@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import Modal from '../components/ConversationModal'; // Import the Modal component
 import BreakPointLogo from '../assets/breakpoint-logo-white.svg'; 
+import { useEffect } from 'react';
 
 const Navbar = () => {
     const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
@@ -11,6 +12,10 @@ const Navbar = () => {
     const closeModal = () => setModalOpen(false); // Function to close modal
     const toggleMenu = () => setMenuOpen(!isMenuOpen); // Function to toggle menu
     const closeMenu = () => setMenuOpen(false); // Function to close menu on link click
+
+     useEffect(() => {
+              window.scrollTo(0, 0);
+          }, []);
 
     return (
         <nav className='nav-container'>

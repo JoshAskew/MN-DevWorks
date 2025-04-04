@@ -9,24 +9,47 @@ const CustomCursor = () => {
         const moveCursor = (e: MouseEvent) => {
             const { clientX: x, clientY: y } = e;
 
-            // Instantly move the small green dot
             gsap.to(dotRef.current, {
-                x: x,
-                y: y,
-                duration: 0.1, // Moves instantly
+                x,
+                y,
+                duration: 0.1,
             });
 
-            // Make the grey circle lag behind
             gsap.to(outlineRef.current, {
-                x: x,
-                y: y,
-                duration: 0.3, // Creates smooth lag effect
+                x,
+                y,
+                duration: 0.3,
+                ease: "power2.out",
+            });
+        };
+
+        const handleMouseDown = () => {
+            gsap.to(outlineRef.current, {
+                scale: 1.5,
+                backgroundColor: "#00ff003e", // Match center dot color
+                duration: 0.3,
+                ease: "power2.out",
+            });
+        };
+
+        const handleMouseUp = () => {
+            gsap.to(outlineRef.current, {
+                scale: 1,
+                backgroundColor: "transparent", // Revert to default
+                duration: 0.3,
                 ease: "power2.out",
             });
         };
 
         window.addEventListener("mousemove", moveCursor);
-        return () => window.removeEventListener("mousemove", moveCursor);
+        window.addEventListener("mousedown", handleMouseDown);
+        window.addEventListener("mouseup", handleMouseUp);
+
+        return () => {
+            window.removeEventListener("mousemove", moveCursor);
+            window.removeEventListener("mousedown", handleMouseDown);
+            window.removeEventListener("mouseup", handleMouseUp);
+        };
     }, []);
 
     return (
