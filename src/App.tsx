@@ -7,7 +7,6 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import CaseStudyDetail from './pages/CaseStudyDetail';
 import Home from './pages/Home';
-import Success from './pages/Success';
 import './index.css';
 import CustomCursor from './components/CustomCursor';
 
@@ -25,7 +24,6 @@ function App() {
                 <Route path="/case" element={<CaseStudy />} />
                 <Route path="/case/:id" element={<CaseStudyDetail />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/success" element={<Success />} />
             </Routes>
             <Footer />
         </Router>
