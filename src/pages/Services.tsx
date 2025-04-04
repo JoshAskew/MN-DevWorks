@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from 'react';
 import '../styles/Services.css';
 import Modal from "../components/ConversationModal";
-// import BlurOnOutlinedIcon from '@mui/icons-material/BlurOnOutlined';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BreakpointIcon from '../assets/BreakpointIcon.svg';
@@ -48,7 +47,6 @@ const Services: React.FC = () => {
                 <p className="services-text slide-in">
                     At  breakpoint, we specialize in creating custom web solutions tailored to your unique needs. From sleek websites to powerful web apps, our team combines innovative design, cutting-edge technology, and a user-first approach to deliver exceptional digital experiences. We’re here to turn your ideas into impactful online solutions that drive results and elevate your brand.
                 </p>
-
                 <button className="convo-button slide-in" onClick={openModal}>
                     Start a Conversation
                 </button>

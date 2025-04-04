@@ -46,11 +46,11 @@ const Contact: React.FC = () => {
                 <button className="convo-contact-button slide-in" onClick={openModal}>
                     Start a Conversation
                 </button>
-                <Modal isOpen={isModalOpen} onClose={closeModal} />
                 <p className="contact-text slide-in">
                     Have a project in mind or need a digital upgrade? We’d love to hear from you! Whether you have questions, need a quote, or just want to chat about your vision, we’re here to help. Reach out today, and let’s build something amazing together—without the hefty price tag.
                 </p>
             </section>
+                <Modal isOpen={isModalOpen} onClose={closeModal} />
             <div className="slide-in">
                 <ul className="contact-list slide-in contact-tile-container">
                     <li className="contact-tile slide-in">
