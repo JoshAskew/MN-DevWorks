@@ -16,25 +16,25 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                 <div className="modal-right">
                     <form  action="https://formsubmit.co/Joshua.Askew43@gmail.com"
   method="POST">
-    <input type="hidden" name="_next" value="https://breakpointdev.com/success" />
+    <input type="hidden" name="_next" value="breakpointdev.com/success" />
     <input type="hidden" name="_captcha" value="false" />
                     <p className='modal-p-2'>Fill out the form below to share your details with us, and we’ll get back to you as soon as possible.</p>
                     <p className="required-info">* Indicates required fields</p>
                         <div>
                             <label htmlFor="name">* Your Name</label>
-                            <input placeholder='Full Name' type="text" id="name" name="name" required />
+                            <input placeholder='Full Name' type="text" id="name" name="Name" required />
                         </div>
                         <div>
                             <label>* Company name</label>
-                            <input placeholder='Company' type="text" id="companyName" name="companyName" required />
+                            <input placeholder='Company' type="text" id="companyName" name="Company Name" required />
                         </div>
                         <div>
                             <label htmlFor="email">* Email</label>
-                            <input placeholder='Valid Email' type="email" id="email" name="email" required />
+                            <input placeholder='Valid Email' type="email" id="email" name="Email" required />
                         </div>
                         <div>
                             <label htmlFor="message">* Describe your vision</label>
-                            <textarea placeholder='Share your vision with us! Describe your goals, ideas, and any specific details you would like to bring to life.' id="message" name="message" required></textarea>
+                            <textarea placeholder='Share your vision with us! Describe your goals, ideas, and any specific details you would like to bring to life.' id="message" name="Vision" required></textarea>
                         </div>
                         <button type="submit">Send Message</button>
                     </form>
