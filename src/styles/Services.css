@@ -73,6 +73,39 @@
     top: 0;
   }
 
+  .convo-button2 {
+    font-family: Tektur;
+    font-size: 20px;
+    color: var(--malachite);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    background: none;
+    margin-top: 20px;
+  }
+  
+  .convo-button2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, left .3s ease-in-out, top 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+  .convo-button2:hover::before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
 .services-summary {
     display: flex;
     flex-direction: column;
