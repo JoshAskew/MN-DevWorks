@@ -16,6 +16,8 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                 <div className="modal-right">
                     <form action="https://formsubmit.co/Joshua.Askew43@gmail.com"
                         method="POST">
+                        <input type="hidden" name="_captcha" value="false"></input>
+                        <input type="hidden" name="_next" value="https://breakpointdev.com/success"/>
                         <p className='modal-p-2'>Fill out the form below to share your details with us, and we’ll get back to you as soon as possible.</p>
                         <p className="required-info">* Indicates required fields</p>
                         <div>
@@ -34,14 +36,13 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                             <label htmlFor="message">* Describe your vision</label>
                             <textarea placeholder='Share your vision with us! Describe your goals, ideas, and any specific details you would like to bring to life.' id="message" name="Vision" required></textarea>
                         </div>
+
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
-
-                <button className="close-btn" onClick={onClose}>
-                    <img src={Close} alt="Close" />
-                </button>
-
+                    <button className="close-btn" onClick={onClose}>
+                        <img src={Close} alt="Close" />
+                    </button>
             </div>
         </div>
     );
