@@ -10,11 +10,13 @@ import Home from './pages/Home';
 import Success from './pages/Success';
 import './index.css';
 import CustomCursor from './components/CustomCursor';
+import Rainfall from './components/Rainfall';
 
 
 function App() {
     return (
     <>
+    <Rainfall dropCount={50} />
     <CustomCursor />
         <Router>
             <Navbar />

@@ -12,8 +12,9 @@ const Services: React.FC = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
 
+    }, []);
+   
     useEffect(() => {
         gsap.utils.toArray(".slide-in").forEach((el: any) => {
             gsap.fromTo(el,
@@ -138,7 +139,7 @@ const Services: React.FC = () => {
                     <h2 className="core-values-heading slide-in">
                         What We Offer</h2>
                     <p className="core-values-text slide-in">
-                    From custom-built websites to brand identity and ongoing support, we provide end-to-end digital solutions tailored to your vision. Whether you're launching something new or leveling up what you already have, we’re here to design, build, and grow with you.
+                        From custom-built websites to brand identity and ongoing support, we provide end-to-end digital solutions tailored to your vision. Whether you're launching something new or leveling up what you already have, we’re here to design, build, and grow with you.
                     </p>
                 </div>
                 <div className="core-values-list slide-in">
@@ -183,9 +184,9 @@ const Services: React.FC = () => {
                                 <span className="CV-list-item-header slide-in">Branding & Logo Design</span>
                             </div>
                             <br></br><p className="CV-list-item-text slide-in">
-                            Your brand is more than just a logo — it’s the first impression, the vibe, and the story you tell. We craft memorable brand identities that reflect who you are and connect with your audience. From logos and color palettes to typography and style guides, we design visuals that are timeless, versatile, and uniquely you.
+                                Your brand is more than just a logo — it’s the first impression, the vibe, and the story you tell. We craft memorable brand identities that reflect who you are and connect with your audience. From logos and color palettes to typography and style guides, we design visuals that are timeless, versatile, and uniquely you.
 
-Stand out with a brand that leaves a lasting mark.<br /> <button className="convo-button2 slide-in " onClick={openModal}>
+                                Stand out with a brand that leaves a lasting mark.<br /> <button className="convo-button2 slide-in " onClick={openModal}>
                                     Start Your Project
                                 </button></p></li>
                     </ul>
