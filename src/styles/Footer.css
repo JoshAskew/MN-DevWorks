@@ -1,7 +1,11 @@
 footer {
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-family: Roboto, "sans-serif";
-    position: relative;
-    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #171717;
+    width: 100%;
+    line-height: .5;
 }

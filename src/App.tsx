@@ -29,8 +29,8 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/success" element={<Success />} />
             </Routes>
-            <Footer />
         </Router>
+            <Footer />
         </>
     );
 }

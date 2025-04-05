@@ -1,5 +1,84 @@
-.logo-lg {
+
+.rocks {
+    width: 1170px;
+    height: 1170px;
+    position: absolute;
+    right: -53px;
+    bottom: -116px;
+    z-index: -1;
+}
+
+.isolation {
+    position: absolute;
+    right: 130px;
+    bottom: 130px;
+    z-index: -2;
+}
+
+.home-subheading {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Tektur;
+    letter-spacing: 1px;
+    padding-left: 28px;
+    display: inline-block;
+    padding-right: 28px;
+    margin-left: 76px;
+}
+
+.home-container {
+    padding-top: 180px;
+    width: 70%;
+}
+
+.home-heading {
+    color: #FFF;
+    font-family: "Archivo Black";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112px;
+    letter-spacing: -5px;
+    margin-left: 78px;
+    margin-top: 20px;
+}
+
+.home-text-container {
+    width: 70%;
+}
+
+.home-text {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Inter, "sans-serif";
+    padding-left: 76px;
+    padding-top: 38px;
+}
+
+.sketch {
+    color: #51ED71;
+    font-family: Gochi Hand;
+    font-size: 30px;
+}
+
+.work-btn {
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
     margin-left: 96px;
-    margin-top: 48px;
     margin-bottom: 48px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid #1E6D31;
+    background: linear-gradient(90deg, #61FF7E 0%, #39D05C 100%);
+}
+
+.work-btn:hover {
+    background-color: #39D05C;
 }
