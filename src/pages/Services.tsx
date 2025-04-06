@@ -5,6 +5,8 @@ import Modal from "../components/ConversationModal";
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BreakpointIcon from '../assets/BreakpointIcon.svg';
+import Rocks from '../assets/Rocks.png';
+import Isolation from '../assets/Isolation_Mode.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,12 +36,36 @@ const Services: React.FC = () => {
         });
     }, []);
 
+    useEffect(() => {
+        const elements = gsap.utils.toArray(".slide-in-right");
+    
+        gsap.fromTo(elements,
+            { x: 100, opacity: 0 },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "power2.out",
+                stagger: 0.2, // adjust this value for more or less delay
+                scrollTrigger: {
+                    trigger: ".home-container", // or any common parent
+                    start: "top 90%",
+                    toggleActions: "play none none none"
+                }
+            }
+        );
+    }, []);
+
     const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
 
     const openModal = () => setModalOpen(true); // Function to open modal
     const closeModal = () => setModalOpen(false); // Function to close modal
     return (
         <>
+        <div className='home-background-container slide-in-right'>
+                        <img src={Rocks} alt="Rocks" className="rocks slid-in-right" />
+                        <img src={Isolation} alt="Isolation" className="isolation slide-in-right" />
+                    </div>
             <section className="services-container">
                 <h5 className="services-sub-heading slide-in">Turning Ideas into Digital Realities</h5>
                 <h1 className="services-heading slide-in">
