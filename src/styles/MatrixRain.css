@@ -1,29 +1,32 @@
+.matrix-interactive-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  z-index: 10;
+  overflow: hidden;
+}
 
-.matrix-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
+.matrix-stream {
+  position: absolute;
+  color: #39ff14;
+  font-family: monospace;
+  font-size: 20px;
+  animation: fall linear;
+  text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
+  opacity: 0.9;
+  user-select: none;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .matrix-drop {
-    position: absolute;
-    color: #39ff14; /* Bright green */
-    font-family: Tektur;
-    font-size: 20px;
-    animation: fall linear infinite;
-    text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
-    opacity: 0.75;
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
   }
-  
-  @keyframes fall {
-    to {
-      transform: translateY(100vh);
-      opacity: 0; /* Fade out as it falls */
-    }
-  }
-  
+}

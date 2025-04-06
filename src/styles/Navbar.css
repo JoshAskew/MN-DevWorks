@@ -51,7 +51,7 @@ li {
 .nav-button {
   font-family: Tektur;
   font-size: 20px;
-  color: var(--primary-green);
+  color: #39ff14;
   text-decoration: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -117,7 +117,7 @@ li {
 
 #burger > div {
   height: 2px;
-  background-color: var(--primary-green);
+  background-color: #39ff14;
   transition: 0.6s;
   z-index: 1;
 }

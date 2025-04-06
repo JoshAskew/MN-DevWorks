@@ -17,7 +17,7 @@ import MatrixRain from './components/MatrixRain';
 function App() {
     return (
     <>
-    <MatrixRain dropCount={50} />
+    <MatrixRain />
     <CustomCursor />
         <Router>
             <Navbar />
