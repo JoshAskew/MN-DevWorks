@@ -87,9 +87,11 @@
     margin-left: 96px;
     margin-bottom: 48px;
     cursor: pointer;
+    pointer-events: auto;
     border-radius: 25px;
     border: 1px solid #1E6D31;
     background: linear-gradient(90deg, #61FF7E 0%, #39D05C 100%);
+    z-index: 20;
 }
 
 .work-btn:hover {
