@@ -22,6 +22,7 @@ import AlineMobile2 from '../assets/AlineMobile2.png';
 import AlineColors from '../assets/AlineColors.png';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -116,6 +117,9 @@ const CaseStudyDetail = () => {
 
     return (
         <>
+                <button className="back-button slide-in">
+                    <Link to="/case" className="back-button-text slide-in">Back to Case Studies</Link>
+                </button>
             <section className="case-detail-container slide-in">
                 <div className="case-detail-content slide-in">
                     <h5 className="case-study-sub-heading slide-in">Case Study</h5>

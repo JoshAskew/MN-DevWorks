@@ -5,9 +5,28 @@
     --text-color: #ffffff;
   }
 
+  .back-button {
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 140px;
+    margin-left: 96px;
+    margin-bottom: 48px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid #1E6D31;
+    background: linear-gradient(90deg, #61FF7E 0%, #39D05C 100%);
+}
+
+.back-button:hover {
+    background: linear-gradient(90deg,#39D05C 100%, #61FF7E 0%,);
+}
+
 .case-detail-container {
     display: flex;
-    padding-top: 200px;
     padding-bottom: 200px;
     justify-content: space-between; /* Space out content evenly */
     width: 100%; /* Adjust width to fit content */
@@ -173,4 +192,5 @@
     height: auto; /* Maintain aspect ratio */
     object-fit: fill;
     border-radius: 15px;
+    margin-bottom: 96px;
 }
