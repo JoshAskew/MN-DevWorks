@@ -163,3 +163,172 @@
 .logo-md-form {
     margin-top: 100px;
 }
+
+@media (max-width: 912px) {
+
+/* Modal Overlay */
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.3s forwards;
+}
+
+/* Modal Content */
+.modal-content {
+    background: rgb(44, 44, 44);
+    display: flex;
+    padding: 48px;
+    width: 80%;
+    height: 100vh;
+    border-radius: 4px;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-100%); /* Start off-screen above */
+    animation: slideIn 0.5s forwards; /* Slide animation */
+    overflow-y: auto;
+}
+
+.modal-content.closing {
+    animation: slideOut 0.5s forwards;
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Fade in animation for overlay */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0); /* Start from the current position */
+    }
+    100% {
+        transform: translateY(1000%); /* Move the modal off the screen from the bottom */
+    }
+}
+
+/* Left Section - Informational */
+.modal-left {
+display: none;
+}
+
+/* Right Section - Form */
+.modal-right {
+    flex: 2;
+    padding-left: 0px;
+}
+
+.modal-right form div {
+    margin-bottom: 15px;
+}
+
+.modal-right label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.modal-right input, .modal-right textarea {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.modal-right button {
+    padding: 10px 20px;
+    background-color: #39d05c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-right button:hover {
+    background-color: #32b84a;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+}
+
+.close-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.modal-header {
+    font-size: 64px;
+    align-items: center;
+    color: #ffffff;
+    line-height: 1.2;
+    font-family: Comfortaa, sans-serif;
+}
+
+.vision-span {
+    color: #39d05c;
+    font-style: italic;
+}
+
+.modal-p-1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: Tektur, sans-serif;
+}
+
+.modal-p-2 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: Tektur, sans-serif;
+}
+
+.required-info {
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Tektur, sans-serif;
+    padding-bottom: 40px;
+
+}
+
+.logo-md-form {
+    margin-top: 100px;
+}
+
+
+}
