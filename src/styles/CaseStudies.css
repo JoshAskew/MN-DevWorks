@@ -71,3 +71,76 @@
 .case-study-item:hover .case-study-text {
   opacity: 1; /* Show text on hover */
 }
+
+@media (max-width: 912px) {
+
+  .case-container {
+    padding-top: 200px;
+    width: 100%;
+  }
+  
+  .case-sub-heading {
+    font-size: 24px;
+    color: var(--columbia-blue);
+    font-family: Comfortaa, sans-serif;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  .case-heading {
+    font-size: 56px;
+    color: #ffffff;
+    font-family: Tektur, sans-serif;
+    padding-left: 0px;
+    padding-bottom: 48px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .case-text {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Comfortaa, sans-serif;
+    padding-left: 20px;
+    padding-bottom: 100px;
+  }
+
+  .case-study-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+      gap:40px;
+      justify-content: center;
+  }
+
+  .case-study-item {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.case-study-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.25); /* Makes image larger initially */
+  transition: transform 0.6s ease-in-out;
+}
+
+.case-study-item:hover .case-study-img {
+  transform: scale(.9); /* Shrinks to fit the container */
+}
+
+.case-study-item:hover .case-study-text {
+  opacity: 1; /* Show text on hover */
+}
+
+}

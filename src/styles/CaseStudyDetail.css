@@ -201,3 +201,205 @@
     border-radius: 15px;
     margin-bottom: 96px;
 }
+
+@media (max-width: 912px) {
+
+
+  .back-button {
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    margin-top: 140px;
+    margin-left: 96px;
+    margin-bottom: 48px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid #1E6D31;
+    background: linear-gradient(90deg, #61FF7E 0%, #39D05C 100%);
+}
+
+ .arrow {
+    width: 18px;
+    margin-top: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+ }
+    .back-button:hover .arrow {
+        transform: translateX(-5px) scale(1.1);
+        transition: 0.3s;
+    }
+
+.case-detail-container {
+    display: flex;
+    padding-bottom: 200px;
+    justify-content: space-between; /* Space out content evenly */
+    width: 100%; /* Adjust width to fit content */
+    margin: auto;
+    color: white;
+}
+
+.case-detail-content {
+    flex: 1; /* Take up equal space */
+    padding-right: 50px; /* Adds spacing between text and image */
+    padding-left: 48px;
+}
+
+.case-study-sub-heading {
+    font-size: 24px;
+    color: var(--columbia-blue);
+    font-family: Comfortaa, sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .case-study-heading {
+    font-size: 86px;
+    color: #ffffff;
+    font-family: Tektur, sans-serif;
+    padding-bottom: 48px;
+    font-weight: 700;
+  }
+
+  .case-study-description {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Comfortaa, sans-serif;
+    
+  }
+
+  .case-detail-img {
+    display: block;
+    width: 50%; /* Make image responsive */
+    height: 50%;
+    object-fit: fill;
+    border-radius: 10px;
+    margin-right: 48px;
+}
+
+.case-study-design-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 200px;
+    color: white;
+}
+
+.case-study-tech-header {
+    font-size: 86px;
+    color: #ffffff;
+    font-family: Tektur, sans-serif;
+    margin-left: 48px;
+    margin-bottom: 48px;
+    font-weight: 700;
+}
+
+.case-study-tech-container {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.tech-section {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.tech-description {
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Comfortaa, sans-serif;
+    padding-bottom: 10px;
+}
+
+.tech-image {
+    height: auto;
+}
+
+.design-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.case-study-design-header {
+    font-size: 24px;
+    color: var(--columbia-blue);
+    font-family: Comfortaa, sans-serif;
+    padding-bottom: 16px;
+}
+
+.color-palette-img, .typography-img {
+    display: block;
+    height: auto;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.our-goal-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 200px;
+    color: white;
+}
+
+.goal-description {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Comfortaa, sans-serif;
+}
+
+.goal-section.image-container {
+    display: flex;
+    margin-top: 48px;
+    flex-direction: row; /* Arrange images side by side */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the images */
+    align-items: center;
+}
+
+.goal-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.goal-header {
+    font-size: 86px;
+    color: #ffffff;
+    font-family: Tektur, sans-serif;
+    padding-bottom: 48px;
+    font-weight: 700;
+}
+
+.goal-img {
+    display: block;
+    min-width:35%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: fill;
+    border-radius: 15px;
+    margin-bottom: 96px;
+}
+
+}

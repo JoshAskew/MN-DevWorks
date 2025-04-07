@@ -348,16 +348,7 @@
       }
     
       button.convo-button2 {
-        font-family: Tektur;
-        font-size: 20px;
-        color: var(--malachite);
-        text-decoration: none;
-        cursor: pointer;
-        padding: 10px 20px;
-        border-radius: 5px;
-        position: absolute;
-        background: none;
-        margin-top: 0px;
+        display: none
       }
       
       .convo-button2::before {
