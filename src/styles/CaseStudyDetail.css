@@ -11,7 +11,7 @@
     font-size: 18px;
     padding: 10px 20px;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     margin-top: 140px;
     margin-left: 96px;
     margin-bottom: 48px;
@@ -21,9 +21,16 @@
     background: linear-gradient(90deg, #61FF7E 0%, #39D05C 100%);
 }
 
-.back-button:hover {
-    background: linear-gradient(90deg,#39D05C 100%, #61FF7E 0%,);
-}
+ .arrow {
+    width: 18px;
+    margin-top: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+ }
+    .back-button:hover .arrow {
+        transform: translateX(-5px) scale(1.1);
+        transition: 0.3s;
+    }
 
 .case-detail-container {
     display: flex;

@@ -1,4 +1,3 @@
-
 .rocks {
     min-width: 1170px;
     height: 1170px;
@@ -14,11 +13,13 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    pointer-events: none; /* So it doesn't interfere with clicking other elements */
-    z-index: -1; /* Make sure it's behind everything else */
+    pointer-events: none;
+    /* So it doesn't interfere with clicking other elements */
+    z-index: -1;
+    /* Make sure it's behind everything else */
     overflow: hidden;
-  }
-  
+}
+
 
 .isolation {
     min-width: 50%;
@@ -43,6 +44,8 @@
 .home-container {
     padding-top: 180px;
     width: 60%;
+    min-height: 100vh;
+    padding-bottom: 100px;
 }
 
 .home-heading {
@@ -82,7 +85,7 @@
     font-size: 18px;
     padding: 10px 20px;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     margin-top: 50px;
     margin-left: 96px;
     margin-bottom: 48px;
@@ -95,5 +98,82 @@
 }
 
 .work-btn:hover {
-    background: linear-gradient(90deg,#39D05C 100%, #61FF7E 0%,);
+    transform: translateX(5px);
+    transition: 0.3s;
+    transition: transform 0.3s ease;
+}
+
+.arrow {
+    width: 18px;
+    margin-top: auto;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.work-btn:hover .arrow {
+    transform: translateX(7px) scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    .rocks {
+        min-width: 600px;
+        height: 600px;
+        position: fixed;
+        left: -25%;
+        top: 25%;
+        z-index: -1;
+    }
+
+    .isolation {
+        min-width: 200px;
+        position: fixed;
+        right: 5%;
+        top: 40%;
+        z-index: -2;
+    }
+
+    .home-container {
+        padding-top: 150px;
+        width: 100%;
+        min-height: 100vh;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .home-subheading {
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .home-heading {
+        font-size: 50px;
+        line-height: 30px;
+        letter-spacing: -2px;
+        margin-left: 0px;
+    }
+
+    .home-text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-text {
+        font-size: 20px;
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    .sketch {
+        font-size: 20px;
+    }
+
+    .work-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-left: 25%;
+    }
 }

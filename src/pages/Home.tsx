@@ -6,6 +6,7 @@ import Modal from "../components/ConversationModal";
 import Mold from '../assets/BreaktheMold.svg'
 import Rocks from '../assets/Rocks.png'
 import Isolation from '../assets/Isolation_Mode.png'
+import RightArrow from '../assets/right-arrow.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,6 +56,8 @@ const CaseStudy: React.FC = () => {
         );
     }, []);
 
+    ScrollTrigger.refresh();
+
     const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
 
     const openModal = () => setModalOpen(true); // Function to open modal
@@ -84,11 +87,11 @@ const CaseStudy: React.FC = () => {
                             From initial <span className='sketch'>sketch</span> to final launch, we turn your ideas into stunning, pixel perfect websites.
                         </p>
                     </div>
-                </div>
                 <button className="work-btn slide-in" onClick={openModal}>
-                    Lets Work Together
+                    Lets Work Together <img src={RightArrow} alt="Arrow" className="arrow" />
                 </button>
             <Modal isOpen={isModalOpen} onClose={closeModal} />
+                </div>
         </>
     );
 };

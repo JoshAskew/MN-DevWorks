@@ -23,6 +23,7 @@ import AlineColors from '../assets/AlineColors.png';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
+import LeftArrow from '../assets/left-arrow.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,6 +119,7 @@ const CaseStudyDetail = () => {
     return (
         <>
                 <button className="back-button slide-in">
+               <img src={LeftArrow} alt="Arrow" className="arrow" />
                     <Link to="/case" className="back-button-text slide-in">Back to Case Studies</Link>
                 </button>
             <section className="case-detail-container slide-in">
