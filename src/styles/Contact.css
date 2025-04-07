@@ -191,3 +191,84 @@
   .contact-list .contact-tile:hover:nth-child(4) a:after{
     background: #a02cde;
   }
+
+  @media (max-width: 912px) {
+
+    .contact-container {
+      padding-top: 200px;
+      width: 100%;
+    }
+  
+    .contact-sub-heading {
+      font-size: 24px;
+      color: var(--columbia-blue); 
+      font-family: Comfortaa, sans-serif;
+      padding-left: 0px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+  
+    .contact-heading {
+      font-size: 56px;
+      color: #ffffff;
+      font-family: Tektur, sans-serif;
+      padding-left: 0px;
+      padding-bottom: 28px;
+      font-weight: 700;
+      text-align: center;
+    }
+  
+    .contact-text {
+      font-size: 18px;
+      color: #ffffff;
+      font-family: Comfortaa, sans-serif;
+      padding-left: 20px;
+      padding-bottom: 48px;
+    }
+  
+    .convo-contact-button {
+      font-family: Tektur;
+      font-size: 20px;
+      color: var(--primary-green);
+      text-decoration: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 5px;
+      position: relative;
+      background: none;
+      margin-left: 96px;
+      margin-bottom: 48px;
+    }
+  
+    .convo-contact-button::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(29, 29, 29);
+      border-radius: 10px;
+      transition: width 0.3s ease-in-out, height 0.3s ease-in-out, left .3s ease-in-out, top 0.3s ease-in-out;
+      z-index: -1;
+    }
+    
+    .convo-contact-button:hover::before {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  
+    .contact-list {
+      display:flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding:0;
+      gap: 50px;
+      padding-bottom: 196px;
+      margin-top: 76px;
+    }
+
+  }
