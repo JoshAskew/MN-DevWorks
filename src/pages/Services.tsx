@@ -212,13 +212,12 @@ const Services: React.FC = () => {
                             <br></br><p className="CV-list-item-text slide-in">
                                 Your brand is more than just a logo — it’s the first impression, the vibe, and the story you tell. We craft memorable brand identities that reflect who you are and connect with your audience. From logos and color palettes to typography and style guides, we design visuals that are timeless, versatile, and uniquely you.
 
-                                Stand out with a brand that leaves a lasting mark.<br /> <button className="convo-button2 slide-in " onClick={openModal}>
+                                Stand out with a brand that leaves a lasting mark.<br /> </p><button className="convo-button2 slide-in " onClick={openModal}>
                                     Start Your Project
-                                </button></p></li>
+                                </button></li>
                     </ul>
                 </div>
             </div>
-
         </>
     );
 };
