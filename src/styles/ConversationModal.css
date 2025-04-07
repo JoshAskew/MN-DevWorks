@@ -166,6 +166,11 @@
 
 @media (max-width: 912px) {
 
+    .submit-button {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
 /* Modal Overlay */
 .modal-overlay {
     display: flex;
@@ -195,7 +200,7 @@
     transform: translateY(-100%); /* Start off-screen above */
     animation: slideIn 0.5s forwards; /* Slide animation */
     overflow-y: auto;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
 }
 
 .modal-content.closing {

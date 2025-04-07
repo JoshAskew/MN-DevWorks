@@ -37,7 +37,7 @@ const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =>
                             <textarea placeholder='Share your vision with us! Describe your goals, ideas, and any specific details you would like to bring to life.' id="message" name="Vision" required></textarea>
                         </div>
 
-                        <button type="submit">Send Message</button>
+                        <button className='submit-button' type="submit">Send Message</button>
                     </form>
                 </div>
                     <button className="close-btn" onClick={onClose}>
