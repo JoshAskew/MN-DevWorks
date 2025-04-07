@@ -1,33 +1,37 @@
-.rocks {
-    min-width: 1170px;
-    height: 1170px;
-    position: fixed;
-    right: -153px;
-    bottom: -116px;
-    z-index: -1;
-}
-
 .home-background-container {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    pointer-events: none;
-    /* So it doesn't interfere with clicking other elements */
-    z-index: -1;
-    /* Make sure it's behind everything else */
+    pointer-events: none; /* So it doesn't interfere with clicking other elements */
+    z-index: -1; /* Make sure it's behind everything else */
     overflow: hidden;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    margin-left: 200px;
 }
-
 
 .isolation {
-    min-width: 50%;
-    position: fixed;
-    right: 90px;
-    bottom: 130px;
+    position: absolute; /* Keep images positioned relatively to each other */
     z-index: -2;
+    max-width: 100%; /* Ensures they don't overflow */
+    height: auto; /* Maintain aspect ratio */
 }
+
+.rocks {
+    position: absolute; /* Keep images positioned relatively to each other */
+    z-index: -1;
+    max-width: 100%; /* Ensures they don't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Apply this scaling to make them shrink together */
+.home-background-container img {
+    transform-origin: center; /* Ensure the scaling is centered */
+}
+
 
 .home-subheading {
     color: rgb(0, 0, 0);
@@ -51,7 +55,7 @@
 .home-heading {
     color: #FFF;
     font-family: "Archivo Black";
-    font-size: 120px;
+    font-size: 110px;
     font-style: normal;
     font-weight: 400;
     line-height: 112px;
@@ -114,23 +118,35 @@
     transform: translateX(7px) scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
 
-    .rocks {
-        min-width: 600px;
-        height: 600px;
+    .home-background-container {
+        display: flex;
         position: fixed;
-        left: -25%;
-        top: 15%;
-        z-index: -1;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100vh;
+        pointer-events: none; /* So it doesn't interfere with clicking other elements */
+        z-index: -1; /* Make sure it's behind everything else */
+        overflow: hidden;
+        justify-content: center; /* Centers the content horizontally */
+        align-items: center; /* Centers the content vertically */
+        margin-left: 0px;
     }
 
     .isolation {
-        min-width: 200px;
-        position: fixed;
-        right: 5%;
-        top: 30%;
+        position: absolute; /* Keep images positioned relatively to each other */
         z-index: -2;
+        width: 75%; /* Ensures they don't overflow */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .rocks {
+        position: absolute; /* Keep images positioned relatively to each other */
+        z-index: -1;
+        width: 100%; /* Ensures they don't overflow */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .home-container {
@@ -176,5 +192,5 @@
         padding: 8px 16px;
         margin-left: 25%;
     }
-    
+
 }

@@ -65,11 +65,19 @@ const CaseStudy: React.FC = () => {
 
     return (
         <>
-                <div className='home-container slide-in"'>
+                
+                    <div className='home-container slide-in"'>
+
+
+                        
+                        
                     <div className='home-background-container slide-in-right'>
                         <img src={Rocks} alt="Rocks" className="rocks slid-in-right" />
                         <img src={Isolation} alt="Isolation" className="isolation slide-in-right" />
                     </div>
+
+
+
                     <div className='home-heading-container'>
                         <h5
                             className="home-subheading slide-in"
@@ -79,7 +87,7 @@ const CaseStudy: React.FC = () => {
                                 backgroundRepeat: 'no-repeat'
                             }}
                         >We Break the Mold of</h5>
-                        <h1 className="home-heading slide-in">Web Design //</h1>
+                        <h1 className="home-heading slide-in">Web Design &</h1>
                         <h1 className="home-heading slide-in">Development</h1>
                     </div>
                     <div className='home-text-container'>
