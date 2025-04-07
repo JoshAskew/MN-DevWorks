@@ -175,6 +175,7 @@
     .home-text-container {
         width: 100%;
         text-align: center;
+        padding: 0 20px;
     }
 
     .home-text {
