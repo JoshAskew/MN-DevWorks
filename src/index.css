@@ -106,3 +106,12 @@ body {
     z-index: 9998;
     transform: translate(-50%, -50%);
 }
+
+@media (max-width: 768px) {
+    .cursor-dot {
+        display: none;
+    }
+    .cursor-outline {
+        display: none;
+    }
+}

@@ -121,7 +121,7 @@
         height: 600px;
         position: fixed;
         left: -25%;
-        top: 25%;
+        top: 15%;
         z-index: -1;
     }
 
@@ -129,7 +129,7 @@
         min-width: 200px;
         position: fixed;
         right: 5%;
-        top: 40%;
+        top: 30%;
         z-index: -2;
     }
 
@@ -176,4 +176,5 @@
         padding: 8px 16px;
         margin-left: 25%;
     }
+    
 }
