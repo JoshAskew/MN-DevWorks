@@ -10,14 +10,13 @@ import Home from './pages/Home';
 import Success from './pages/Success';
 import './index.css';
 import CustomCursor from './components/CustomCursor';
-//import Rainfall from './components/Rainfall';
-//import MatrixRain from './components/MatrixRain';
+import MatrixRain from './components/MatrixRain';
 
 
 function App() {
     return (
     <>
-    {/* <MatrixRain /> */}
+    <MatrixRain />
     <CustomCursor />
         <Router>
             <Navbar />
