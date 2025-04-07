@@ -53,7 +53,6 @@ const About: React.FC = () => {
       }
     );
   }, []);
-
   return (
     <>
         <div className='home-background-container slide-in-right'>
