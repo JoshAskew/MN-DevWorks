@@ -173,3 +173,72 @@
     margin-left: 44px;
     animation: spin 4s linear infinite;
   }
+
+  @media (max-width: 912px) {
+    .home-background-container {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: -50%;
+      width: 200%;
+      height: 100vh;
+      pointer-events: none; /* So it doesn't interfere with clicking other elements */
+      z-index: -1; /* Make sure it's behind everything else */
+      overflow: hidden;
+      justify-content: center; /* Centers the content horizontally */
+      align-items: center; /* Centers the content vertically */
+      margin-left: 0px;
+  }
+
+  .isolation {
+      position: absolute; /* Keep images positioned relatively to each other */
+      z-index: -2;
+      width: 75%; /* Ensures they don't overflow */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .rocks {
+      position: absolute; /* Keep images positioned relatively to each other */
+      z-index: -1;
+      width: 100%; /* Ensures they don't overflow */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .about-container {
+      margin-top: 130px;
+      width: 90%;
+      min-height: 100vh;
+      padding-bottom: 50px;
+      text-align: center;
+  }
+
+  .about-sub-heading {
+      font-size: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+  }
+
+  .about-heading {
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: -2px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+  }
+
+  .logo-md {
+      width: 300px;
+      margin-left: 10%;
+  }
+
+  .about-text {
+      font-size: 16px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+  }
+
+}
