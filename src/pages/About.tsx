@@ -56,15 +56,18 @@ const About: React.FC = () => {
  
   return (
     <>
+    <div className="main-about-container">
       <div className='home-background-container slide-in-right'>
                         <img src={Rocks} alt="Rocks" className="rocks slid-in-right" />
                         <img src={Isolation} alt="Isolation" className="isolation slide-in-right" />
                     </div>
       <section className="about-container slide-in">
         <h5 className="about-sub-heading slide-in">Together, the sky is our limit.</h5>
+        <div className="header-container">
         <h1 className="about-heading slide-in">
           We are <img src={BreakPointLogo} className="logo-md slide-in" alt="BreakPoint Logo" />
         </h1>
+        </div>
         <p className="about-text slide-in">
           We’re a small team of passionate web developers who love bringing ideas to life. Whether it’s a sleek portfolio, a custom web app, or a full-scale business website, we focus on creating fast, modern, and user-friendly experiences. We don’t just build websites—we build solutions that work for you. If you have a vision, we’re here to make it happen. Let’s create something awesome together!
         </p>
@@ -147,6 +150,7 @@ const About: React.FC = () => {
         </div>
       </div>
       </section>
+      </div>
     </>
 
   );

@@ -98,7 +98,7 @@
     border-radius: 25px;
     border: 1px solid #1E6D31;
     background: linear-gradient(90deg, #61FF7E 0%, #39D05C 100%);
-    z-index: 20;
+    z-index: 1;
 }
 
 .work-btn:hover {
@@ -119,6 +119,14 @@
 }
 
 @media (max-width: 912px) {
+
+     *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
     .home-background-container {
         display: flex;
@@ -190,8 +198,13 @@
 
     .work-btn {
         font-size: 16px;
-        padding: 8px 16px;
-        margin-left: 20%;
+        margin-left: 0px;
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
 }

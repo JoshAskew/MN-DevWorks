@@ -95,9 +95,11 @@ const CaseStudy: React.FC = () => {
                             From initial <span className='sketch'>sketch</span> to final launch, we turn your ideas into stunning, pixel perfect websites.
                         </p>
                     </div>
+                    <div className='button-container'>
                 <button className="work-btn slide-in" onClick={openModal}>
                     Lets Work Together <img src={RightArrow} alt="Arrow" className="arrow" />
                 </button>
+                </div>
             <Modal isOpen={isModalOpen} onClose={closeModal} />
                 </div>
         </>
