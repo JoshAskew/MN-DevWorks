@@ -2,36 +2,49 @@
     display: flex;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 290px;
+    width: 80%;
     height: 100vh;
-    pointer-events: none; /* So it doesn't interfere with clicking other elements */
-    z-index: -1; /* Make sure it's behind everything else */
-    overflow: hidden;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    margin-left: 200px;
+    pointer-events: none;
+    /* So it doesn't interfere with clicking other elements */
+    z-index: -1;
+    /* Make sure it's behind everything else */
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: center;
+    /* Centers the content vertically */
+}
+
+.home-background {
+    background-color: #121212;
+    margin: 40px;
+    border-radius: 20px;
 }
 
 .isolation {
-    position: absolute; /* Keep images positioned relatively to each other */
+    position: absolute;
+    /* Keep images positioned relatively to each other */
     z-index: -2;
-    max-width: 100%; /* Ensures they don't overflow */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Ensures they don't overflow */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .rocks {
-    position: absolute; /* Keep images positioned relatively to each other */
-    z-index: -1;
-    max-width: 100%; /* Ensures they don't overflow */
-    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    /* Keep images positioned relatively to each other */
+    max-width: 100%;
+    /* Ensures they don't overflow */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 /* Apply this scaling to make them shrink together */
 .home-background-container img {
-    transform-origin: center; /* Ensure the scaling is centered */
+    transform-origin: center;
+    /* Ensure the scaling is centered */
 }
-
 
 .home-subheading {
     color: rgb(0, 0, 0);
@@ -47,18 +60,19 @@
 
 .home-container {
     padding-top: 180px;
-    width: 60%;
+    width: 100%;
     min-height: 100vh;
     padding-bottom: 100px;
 }
 
 .home-heading {
     color: #FFF;
-    font-family: "Archivo Black";
+    font-family: "Roboto", sans;
+    text-transform: uppercase;
     font-size: 110px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 112px;
+    font-weight: 600;
+    line-height: 90px;
     letter-spacing: -5px;
     margin-left: 78px;
     margin-top: 20px;
@@ -73,8 +87,8 @@
     font-size: 20px;
     font-weight: 700;
     font-family: Inter, "sans-serif";
-    padding-left: 160px;
-    padding-top: 38px;
+    padding-left: 88px;
+
 }
 
 .sketch {
@@ -118,15 +132,104 @@
     transform: translateX(7px) scale(1.1);
 }
 
+.mission-container {
+    width: 100%;
+    padding-top: 120px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 90px;
+    height: auto;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.mission-span {
+    color: #51ED71;
+}
+
+.mission-statement {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Arimo;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 38px;
+    margin-bottom: 132px;
+}
+
+.stand-container {
+    display: flex;
+    padding: 72px 80px 134px 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    align-self: stretch;
+}
+
+.stand-above-container {
+    width: 90%;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.stand-above-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 336px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border-bottom: 1px solid #61FF7E;
+    background: #121212;
+    margin-bottom: 200px;
+}
+
+.stand-above-h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Arimo";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.stand-above-header {
+    color: #FFF;
+    font-family: "Arimo";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.stand-above-text {
+    color: #CECECE;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 @media (max-width: 912px) {
 
-     *,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
     .home-background-container {
         display: flex;
@@ -135,26 +238,36 @@
         left: -50%;
         width: 200%;
         height: 100vh;
-        pointer-events: none; /* So it doesn't interfere with clicking other elements */
-        z-index: -1; /* Make sure it's behind everything else */
+        pointer-events: none;
+        /* So it doesn't interfere with clicking other elements */
+        z-index: -1;
+        /* Make sure it's behind everything else */
         overflow: hidden;
-        justify-content: center; /* Centers the content horizontally */
-        align-items: center; /* Centers the content vertically */
+        justify-content: center;
+        /* Centers the content horizontally */
+        align-items: center;
+        /* Centers the content vertically */
         margin-left: 0px;
     }
 
     .isolation {
-        position: absolute; /* Keep images positioned relatively to each other */
+        position: absolute;
+        /* Keep images positioned relatively to each other */
         z-index: -2;
-        width: 75%; /* Ensures they don't overflow */
-        height: auto; /* Maintain aspect ratio */
+        width: 75%;
+        /* Ensures they don't overflow */
+        height: auto;
+        /* Maintain aspect ratio */
     }
 
     .rocks {
-        position: absolute; /* Keep images positioned relatively to each other */
+        position: absolute;
+        /* Keep images positioned relatively to each other */
         z-index: -1;
-        width: 100%; /* Ensures they don't overflow */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        /* Ensures they don't overflow */
+        height: auto;
+        /* Maintain aspect ratio */
     }
 
     .home-container {
