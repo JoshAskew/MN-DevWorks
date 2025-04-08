@@ -209,6 +209,7 @@ const Home: React.FC = () => {
                     </p>
                 </div>
             </section>
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
 
 
         </>
