@@ -1,6 +1,6 @@
 .home-background-container {
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 290px;
     width: 80%;
@@ -13,6 +13,11 @@
     /* Centers the content horizontally */
     align-items: center;
     /* Centers the content vertically */
+}
+
+.dot {
+    z-index: 0 !important;
+    position: absolute;
 }
 
 .home-background {
@@ -38,6 +43,7 @@
     /* Ensures they don't overflow */
     height: auto;
     /* Maintain aspect ratio */
+    z-index: -1;
 }
 
 /* Apply this scaling to make them shrink together */

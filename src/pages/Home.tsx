@@ -17,11 +17,20 @@ const Home: React.FC = () => {
     useEffect(() => {
         // Create and append the dot to the body once
         const dotElement = document.createElement('div');
+        dotElement.classList.add('dot');
         dotElement.style.position = 'absolute';
-        dotElement.style.width = '10px';
-        dotElement.style.height = '10px';
-        dotElement.style.backgroundColor = '#00FF00'; // Bright green color
+        dotElement.style.width = '8px';
+        dotElement.style.height = '3px';
+        dotElement.style.backgroundColor = '#61FF7E'; // Bright green color
         dotElement.style.borderRadius = '50%';
+        dotElement.style.boxShadow = `
+        0 0 10px #61FF7E,
+        0 0 20px #61FF7E,
+        0 0 30px #61FF7E,
+        0 0 40px #61FF7E,
+        0 0 50px #61FF7E
+      `;
+
         document.body.appendChild(dotElement);
 
         setDot(dotElement);
@@ -46,7 +55,7 @@ const Home: React.FC = () => {
                     alignOrigin: [0.5, 0.5]
                 },
                 repeat: -1,
-                duration: 5,
+                duration: 20,
                 ease: "none",
                 scrollTrigger: {
                     trigger: ".home-container",
@@ -80,7 +89,7 @@ const Home: React.FC = () => {
                 opacity: 1,
                 duration: 1,
                 ease: "power2.out",
-                stagger: 0.2, // adjust this value for more or less delay
+                stagger: 0.3, // adjust this value for more or less delay
                 scrollTrigger: {
                     trigger: ".home-container", // or any common parent
                     start: "top 90%",
@@ -110,7 +119,9 @@ const Home: React.FC = () => {
         );
     }, []);
 
-    ScrollTrigger.refresh();
+    useEffect(() => {
+        ScrollTrigger.refresh();
+      }, []);
 
     const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
 
@@ -210,6 +221,8 @@ const Home: React.FC = () => {
                 </div>
             </section>
             <Modal isOpen={isModalOpen} onClose={closeModal} />
+
+        
 
 
         </>

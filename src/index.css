@@ -29,9 +29,12 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+li,
+ul {
     margin: 0;
     padding: 0;
+    z-index: 5;
 }
 
 /* Set body defaults */

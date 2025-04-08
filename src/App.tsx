@@ -11,6 +11,7 @@ import Success from './pages/Success';
 import './index.css';
 import CustomCursor from './components/CustomCursor';
 // import MatrixRain from './components/MatrixRain';
+import Test from './pages/Test.js';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/case/:id" element={<CaseStudyDetail />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/success" element={<Success />} />
+                <Route path="/test" element={<Test />} />
             </Routes>
         </Router>
             <Footer />
