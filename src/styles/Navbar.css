@@ -174,6 +174,18 @@ li {
   cursor: pointer;
 }
 
+.menu-item img {
+  opacity: 0;
+  margin-right: -40px; /* adjust as needed */
+  
+  transition: opacity 0.3s ease, margin-right 0.3s ease;
+}
+
+.menu-item:hover img {
+  opacity: 1;
+  margin-right: 0;
+}
+
 #meny.open .menu-item {
   animation: slideIn 0.5s ease-out forwards;
 }
