@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
-import Modal from '../components/ConversationModal'; // Import the Modal component
+import Modal from '../components/ConversationModal'; 
 import BreakPointLogo from '../assets/breakpoint-logo-white.svg'; 
+import Home from '../assets/Home.svg'
+import Services from '../assets/Services.svg';
+import CaseStudy from '../assets/Case-Studies.svg'
+import About from '../assets/About-Us.svg';
+import Contact from '../assets/Contact.svg';
 import { useEffect } from 'react';
 
 const Navbar = () => {
@@ -39,22 +44,24 @@ const Navbar = () => {
                     {/* Menu Overlay */}
                     <nav id="meny" className={isMenuOpen ? 'open' : ''}>
                         <ul>
-                            <div className="vertical-menu-label">
-                                <span>Menu</span>
-                            </div>
                             <li className='menu-item hover-underline'>
+                                <img src={Home} alt="Home" className='home-icon' />
                                 <Link to="/" onClick={closeMenu}>Home</Link>
                             </li>
                             <li className='menu-item hover-underline'>
+                                <img src={About} alt="About" className='about-icon' />
                                 <Link to="/about" onClick={closeMenu}>About</Link>
                             </li>
                             <li className='menu-item hover-underline'>
+                                <img src={Services} alt="Services" className='services-icon' />
                                 <Link to="/services" onClick={closeMenu}>Services</Link>
                             </li>
                             <li className='menu-item hover-underline'>
+                                <img src={CaseStudy} alt="Case Studies" className='case-icon' />
                                 <Link to="/case" onClick={closeMenu}>Case Studies</Link>
                             </li>
                             <li className='menu-item hover-underline'>
+                                <img src={Contact} alt="Contact" className='contact-icon' />
                                 <Link to="/contact" onClick={closeMenu}>Contact</Link>
                             </li>
                         </ul>
