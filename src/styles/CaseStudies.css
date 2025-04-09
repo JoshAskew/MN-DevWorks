@@ -108,11 +108,12 @@
   }
   
   .case-sub-heading {
+    margin: 0px;
+    padding: 0px;
     font-size: 24px;
     color: var(--columbia-blue);
     font-family: Comfortaa, sans-serif;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     text-align: center;
   }
   
@@ -127,11 +128,15 @@
   }
 
   .case-text {
+    max-width: calc(100% - 40px);
+    margin:0px;
+    padding: 0px;
     font-size: 18px;
     color: #ffffff;
     font-family: Comfortaa, sans-serif;
-    padding-left: 20px;
-    padding-bottom: 100px;
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-left: 20px;
   }
 
   .case-study-content {
