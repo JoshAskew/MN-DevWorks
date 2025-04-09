@@ -253,6 +253,7 @@
 
   .services-container {
     padding-top: 200px;
+    margin: 0;
     width: 100%;
   }
 
@@ -279,8 +280,11 @@
     font-size: 18px;
     color: #ffffff;
     font-family: Comfortaa, sans-serif;
-    padding-left: 20px;
-    padding-bottom: 48px;
+    padding: 20px 20px;
+    margin: 0;
+    max-width: calc(100% - 40px);
+    margin-left: 20px;
+
   }
 
   .breakpoint {
@@ -346,15 +350,18 @@
   }
 
   .services-summary {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 20px;
     padding-right: 0px;
     padding-bottom: 100px;
   }
 
   .services-summary-heading {
+    margin: 0;
+    padding: 0;
     font-size: 54px;
     color: #ffffff;
     font-family: Tektur, sans-serif;
@@ -365,10 +372,16 @@
   }
 
   .services-summary-text {
+    max-width: calc(100% - 40px);
+    width: 100%;
+    margin: 0;
+    padding: 20px;
     font-size: 18px;
     color: #ffffff;
     font-family: Comfortaa, sans-serif;
-    padding-bottom: 96px;
+    margin-bottom: 96px;
+    margin-left: 20px;
+    
   }
 
   .service-title {
@@ -376,6 +389,7 @@
     color: #39d05c;
     font-family: Comfortaa, sans-serif;
     padding-bottom: 10px;
+    margin-left: 20px;
   }
 
   .service-description {
@@ -384,6 +398,7 @@
     font-family: Roboto, sans-serif;
     padding-bottom: 30px;
     line-height: 1.5;
+    margin-left: 20px;
   }
 
   .why-us {
