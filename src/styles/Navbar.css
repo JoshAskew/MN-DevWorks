@@ -177,7 +177,6 @@ li {
 .menu-item img {
   opacity: 0;
   margin-right: -40px; /* adjust as needed */
-  
   transition: opacity 0.3s ease, margin-right 0.3s ease;
 }
 

@@ -82,25 +82,25 @@ const Contact: React.FC = () => {
                     <li className="contact-tile slide-in">
                         <a href="https://www.facebook.com/josh.askew.71/" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-facebook slide-in" aria-hidden="true"></i>
-                            <span> - Facebook</span>
+                            <span >&lt;&gt; Facebook</span>
                         </a>
                     </li>
                     <li className="contact-tile">
                         <a href="https://github.com/JoshAskew" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-twitter slide-in" aria-hidden="true"></i>
-                            <span> - GitHub</span>
+                            <span> &lt;&gt; GitHub</span>
                         </a>
                     </li>
                     <li className="contact-tile slide-in">
                         <a href="#" onClick={(e) => { e.preventDefault(); openModal(); }}>
                             <i className="fa fa-google-plus slide-in" aria-hidden="true"></i>
-                            <span> - Gmail</span>
+                            <span> &lt;&gt; Gmail</span>
                         </a>
                     </li>
                     <li className="contact-tile slide-in">
                         <a href="https://joshua-askew.netlify.app/" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-instagram slide-in" aria-hidden="true"></i>
-                            <span> - Portfolio</span>
+                            <span> &lt;&gt; Portfolio</span>
                         </a>
                     </li>
                 </ul>

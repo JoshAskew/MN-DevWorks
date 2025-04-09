@@ -7,7 +7,7 @@
     height: 100vh;
     pointer-events: none;
     /* So it doesn't interfere with clicking other elements */
-    z-index: -1;
+    z-index: 0;
     /* Make sure it's behind everything else */
     justify-content: center;
     /* Centers the content horizontally */
@@ -43,12 +43,13 @@
     /* Ensures they don't overflow */
     height: auto;
     /* Maintain aspect ratio */
-    z-index: -1;
+    z-index: 2 !important;
 }
 
 /* Apply this scaling to make them shrink together */
 .home-background-container img {
     transform-origin: center;
+    z-index: 1;
     /* Ensure the scaling is centered */
 }
 

@@ -6,32 +6,250 @@
 }
 
 .contact-container {
+  padding-top: 200px;
+  width: 50%;
+}
+
+.contact-sub-heading {
+  font-size: 24px;
+  color: var(--columbia-blue);
+  font-family: Comfortaa, sans-serif;
+  padding-left: 96px;
+  padding-bottom: 10px;
+}
+
+.contact-heading {
+  font-size: 86px;
+  color: #ffffff;
+  font-family: Tektur, sans-serif;
+  padding-left: 96px;
+  padding-bottom: 28px;
+  font-weight: 700;
+}
+
+.contact-text {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: Comfortaa, sans-serif;
+  margin-left: 76px;
+  margin-bottom: 28px;
+  padding: 20px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  /* Apply blur effect to the background */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari */
+  border-radius: 10px;
+  /* Optional: rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional: shadow for depth */
+
+}
+
+.convo-contact-button {
+  font-family: Tektur;
+  font-size: 20px;
+  color: var(--primary-green);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+  background: none;
+  margin-left: 96px;
+  margin-bottom: 48px;
+}
+
+.convo-contact-button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, left .3s ease-in-out, top 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.convo-contact-button:hover::before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 50px;
+  padding-bottom: 196px;
+  margin-top: 76px;
+}
+
+.contact-list .contact-tile {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.contact-list .contact-tile a .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: .5s;
+  padding-right: 14px;
+}
+
+.contact-list .contact-tile a span {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  color: white;
+  letter-spacing: 4px;
+  transition: .5s;
+}
+
+.contact-list .contact-tile a {
+  text-decoration: none;
+  display: absolute;
+  display: block;
+  width: 210px;
+  height: 80px;
+  background: #121212;
+  text-align: left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: .5s;
+  box-shadow: -20px 20px 10px rgba(255, 255, 255, 0.612);
+  border: 1px solid rgba(174, 174, 174, 0.356);
+}
+
+.contact-list .contact-tile a:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #080808;
+  transform: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+  border: 1px solid rgba(174, 174, 174, 0.356);
+}
+
+.contact-list .contact-tile a:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #1b1b1b;
+  transform: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+  border: 1px solid rgba(174, 174, 174, 0.356);
+}
+
+.contact-list .contact-tile a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(115, 115, 115, 0.5);
+}
+
+.contact-list .contact-tile:hover .fa {
+  color: #fff;
+}
+
+.contact-list .contact-tile:hover span {
+  color: #fff;
+}
+
+.contact-list .contact-tile:hover:nth-child(1) a {
+  background: #3b5998;
+}
+
+.contact-list .contact-tile:hover:nth-child(1) a:before {
+  background: #365492;
+}
+
+.contact-list .contact-tile:hover:nth-child(1) a:after {
+  background: #4a69ad;
+}
+
+.contact-list .contact-tile:hover:nth-child(2) a {
+  background: #2fbb4f;
+}
+
+.contact-list .contact-tile:hover:nth-child(2) a:before {
+  background: #1d7231;
+}
+
+.contact-list .contact-tile:hover:nth-child(2) a:after {
+  background: #38df5f;
+}
+
+.contact-list .contact-tile:hover:nth-child(3) a {
+  background: #dd4b39;
+}
+
+.contact-list .contact-tile:hover:nth-child(3) a:before {
+  background: #b33a2b;
+}
+
+.contact-list .contact-tile:hover:nth-child(3) a:after {
+  background: #dd6656;
+}
+
+.contact-list .contact-tile:hover:nth-child(4) a {
+  background: #7b22ac;
+}
+
+.contact-list .contact-tile:hover:nth-child(4) a:before {
+  background: #571779;
+}
+
+.contact-list .contact-tile:hover:nth-child(4) a:after {
+  background: #9228cc;
+}
+
+@media (max-width: 912px) {
+
+  .contact-container {
     padding-top: 200px;
-    width: 50%;
+    width: 100%;
   }
 
   .contact-sub-heading {
     font-size: 24px;
-    color: var(--columbia-blue); 
+    color: var(--columbia-blue);
     font-family: Comfortaa, sans-serif;
-    padding-left: 96px;
+    padding-left: 0px;
     padding-bottom: 10px;
+    text-align: center;
   }
 
   .contact-heading {
-    font-size: 86px;
+    font-size: 56px;
     color: #ffffff;
     font-family: Tektur, sans-serif;
-    padding-left: 96px;
+    padding-left: 0px;
     padding-bottom: 28px;
     font-weight: 700;
+    text-align: center;
   }
 
   .contact-text {
     font-size: 18px;
     color: #ffffff;
     font-family: Comfortaa, sans-serif;
-    padding-left: 96px;
+    padding-left: 20px;
     padding-bottom: 48px;
   }
 
@@ -61,7 +279,7 @@
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out, left .3s ease-in-out, top 0.3s ease-in-out;
     z-index: -1;
   }
-  
+
   .convo-contact-button:hover::before {
     width: 100%;
     height: 100%;
@@ -70,205 +288,14 @@
   }
 
   .contact-list {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding:0;
+    padding: 0;
     gap: 50px;
     padding-bottom: 196px;
     margin-top: 76px;
   }
-  
-  .contact-list .contact-tile {
-    list-style:none;
-    margin:0 5px;
-  }
-  
-  .contact-list .contact-tile a .fa {
-    font-size: 40px;
-    color: #262626;
-    line-height:80px;
-    transition: .5s;
-    padding-right: 14px;
-  }
-  
-  .contact-list .contact-tile a span {
-    padding:0;
-    margin:0;
-    position:absolute;
-    top: 30px;
-    color: #262626;
-    letter-spacing: 4px;
-    transition: .5s;
-  }
-  
-  .contact-list .contact-tile a {
-    text-decoration: none;
-    display:absolute;
-    display:block;
-    width:210px;
-    height:80px;
-    background: var(--columbia-blue);
-    text-align:left;
-    padding-left: 20px;
-    transform: rotate(-30deg) skew(25deg) translate(0,0);
-    transition:.5s;
-    box-shadow: -20px 20px 10px rgba(0,0,0,.5);
-  }
-  .contact-list .contact-tile a:before {
-    content: '';
-    position: absolute;
-    top:10px;
-    left:-20px;
-    height:100%;
-    width:20px;
-    background: #90a5af;
-    transform: .5s;
-    transform: rotate(0deg) skewY(-45deg);
-  }
-  .contact-list .contact-tile a:after {
-    content: '';
-    position: absolute;
-    bottom:-20px;
-    left:-10px;
-    height:20px;
-    width:100%;
-    background: #b6d0dc;
-    transform: .5s;
-    transform: rotate(0deg) skewX(-45deg);
-  }
-  
-  .contact-list .contact-tile a:hover {
-    transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
-    box-shadow: -50px 50px 50px rgba(0,0,0,.5);
-  }
-  
-  .contact-list .contact-tile:hover .fa {
-    color:#fff;
-  }
-  
-  .contact-list .contact-tile:hover span {
-    color:#fff;
-  }
-  
-  .contact-list .contact-tile:hover:nth-child(1) a{
-    background: #3b5998;
-  }
-  .contact-list .contact-tile:hover:nth-child(1) a:before{
-    background: #365492;
-  }
-  .contact-list .contact-tile:hover:nth-child(1) a:after{
-    background: #4a69ad;
-  }
-  
-  .contact-list .contact-tile:hover:nth-child(2) a{
-    background: #2fbb4f;
-  }
-  .contact-list .contact-tile:hover:nth-child(2) a:before{
-    background: #1d7231;
-  }
-  .contact-list .contact-tile:hover:nth-child(2) a:after{
-    background: #3ae862;
-  }
-  
-  .contact-list .contact-tile:hover:nth-child(3) a{
-    background: #dd4b39;
-  }
-  .contact-list .contact-tile:hover:nth-child(3) a:before{
-    background: #b33a2b;
-  }
-  .contact-list .contact-tile:hover:nth-child(3) a:after{
-    background: #e66a5a;
-  }
-  
-  .contact-list .contact-tile:hover:nth-child(4) a{
-    background: #7b22ac;
-  }
-  .contact-list .contact-tile:hover:nth-child(4) a:before{
-    background: #571779;
-  }
-  .contact-list .contact-tile:hover:nth-child(4) a:after{
-    background: #a02cde;
-  }
 
-  @media (max-width: 912px) {
-
-    .contact-container {
-      padding-top: 200px;
-      width: 100%;
-    }
-  
-    .contact-sub-heading {
-      font-size: 24px;
-      color: var(--columbia-blue); 
-      font-family: Comfortaa, sans-serif;
-      padding-left: 0px;
-      padding-bottom: 10px;
-      text-align: center;
-    }
-  
-    .contact-heading {
-      font-size: 56px;
-      color: #ffffff;
-      font-family: Tektur, sans-serif;
-      padding-left: 0px;
-      padding-bottom: 28px;
-      font-weight: 700;
-      text-align: center;
-    }
-  
-    .contact-text {
-      font-size: 18px;
-      color: #ffffff;
-      font-family: Comfortaa, sans-serif;
-      padding-left: 20px;
-      padding-bottom: 48px;
-    }
-  
-    .convo-contact-button {
-      font-family: Tektur;
-      font-size: 20px;
-      color: var(--primary-green);
-      text-decoration: none;
-      cursor: pointer;
-      padding: 10px 20px;
-      border-radius: 5px;
-      position: relative;
-      background: none;
-      margin-left: 96px;
-      margin-bottom: 48px;
-    }
-  
-    .convo-contact-button::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 25%;
-      width: 20px;
-      height: 20px;
-      background-color: rgb(29, 29, 29);
-      border-radius: 10px;
-      transition: width 0.3s ease-in-out, height 0.3s ease-in-out, left .3s ease-in-out, top 0.3s ease-in-out;
-      z-index: -1;
-    }
-    
-    .convo-contact-button:hover::before {
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-    }
-  
-    .contact-list {
-      display:flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding:0;
-      gap: 50px;
-      padding-bottom: 196px;
-      margin-top: 76px;
-    }
-
-  }
+}
