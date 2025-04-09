@@ -74,7 +74,7 @@ const Services: React.FC = () => {
                 <p className="services-text slide-in">
                     At  breakpoint, we specialize in creating custom web solutions tailored to your unique needs. From sleek websites to powerful web apps, our team combines innovative design, cutting-edge technology, and a user-first approach to deliver exceptional digital experiences. We’re here to turn your ideas into impactful online solutions that drive results and elevate your brand.
                 </p>
-                <button className="convo-button slide-in" onClick={openModal}>
+                <button className="work-btn slide-in" onClick={openModal}>
                     Get a Free Quote
                 </button>
                 <section className="services-summary">
@@ -212,7 +212,7 @@ const Services: React.FC = () => {
                             <br></br><p className="CV-list-item-text slide-in">
                                 Your brand is more than just a logo — it’s the first impression, the vibe, and the story you tell. We craft memorable brand identities that reflect who you are and connect with your audience. From logos and color palettes to typography and style guides, we design visuals that are timeless, versatile, and uniquely you.
 
-                                Stand out with a brand that leaves a lasting mark.<br /> </p><button className="convo-button2 slide-in " onClick={openModal}>
+                                Stand out with a brand that leaves a lasting mark.<br /> </p><button className="work-btn slide-in " onClick={openModal}>
                                     Start Your Project
                                 </button></li>
                     </ul>
