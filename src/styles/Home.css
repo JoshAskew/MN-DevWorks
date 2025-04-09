@@ -122,12 +122,6 @@
     z-index: 1;
 }
 
-.work-btn:hover {
-    transform: translateX(5px);
-    transition: 0.3s;
-    transition: transform 0.3s ease;
-}
-
 .arrow {
     width: 18px;
     margin-top: auto;
@@ -140,11 +134,10 @@
 }
 
 .mission-container {
-    width: 100%;
-    padding-top: 120px;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-bottom: 90px;
+    margin-top: 220px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 190px;
     height: auto;
     color: #ffffff;
     text-transform: uppercase;
@@ -161,7 +154,6 @@
     letter-spacing: 1px;
     text-align: justify;
     line-height: 38px;
-    margin-bottom: 100px;
 }
 
 .stand-container {

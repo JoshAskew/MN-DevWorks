@@ -42,7 +42,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Menu Overlay */}
-                    <nav id="meny" className={isMenuOpen ? 'open' : ''}>
+                    <nav id="menu" className={isMenuOpen ? 'open' : ''}>
                         <ul>
                             <li className='menu-item hover-underline'>
                                 <img src={Home} alt="Home" className='home-icon' />

@@ -174,10 +174,10 @@ const Home: React.FC = () => {
                         </p>
                     </div>
                     <div className='button-container'>
+                    </div>
                         <button className="work-btn slide-in" onClick={openModal}>
                             Lets Work Together <img src={RightArrow} alt="Arrow" className="arrow" />
                         </button>
-                    </div>
                     <Modal isOpen={isModalOpen} onClose={closeModal} />
                 </div>
             </div>
