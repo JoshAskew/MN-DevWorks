@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                 <h1 className="contact-heading slide-in">
                     Lets Connect
                 </h1>
-                <button className="work-btn slide-in" onClick={openModal}>
+                <button className="work-btn2 slide-in" onClick={openModal}>
                     Start a Conversation
                 </button>
                 <p className="contact-text slide-in">
