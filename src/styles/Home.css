@@ -372,14 +372,17 @@
     }
 
     .mission-container {
-        width: 100%;
-        padding-top: 120px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 90px;
+        
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
         height: auto;
         color: #ffffff;
         text-transform: uppercase;
+        margin-left: 20px;
+        margin-right: 40px;
     }
     
     .mission-span {
@@ -387,12 +390,12 @@
     }
     
     .mission-statement {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 700;
         font-family: Arimo;
         letter-spacing: 1px;
         text-align: justify;
-        line-height: 30px;
+        line-height: 28px;
         margin-bottom: 100px;
     }
 
