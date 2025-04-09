@@ -55,7 +55,7 @@ const About: React.FC = () => {
   }, []);
   return (
     <>
-        <div className='home-background-container slide-in-right'>
+        <div className='home-background-container2 slide-in-right'>
           <img src={Rocks} alt="Rocks" className="rocks slid-in-right" />
           <img src={Isolation} alt="Isolation" className="isolation slide-in-right" />
         </div>

@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
     const closeModal = () => setModalOpen(false); // Function to close modal
     return (
         <>
-         <div className='home-background-container slide-in-right'>
+         <div className='home-background-container2 slide-in-right'>
                         <img src={Rocks} alt="Rocks" className="rocks slid-in-right" />
                         <img src={Isolation} alt="Isolation" className="isolation slide-in-right" />
                     </div>
@@ -105,6 +105,7 @@ const Contact: React.FC = () => {
                     </li>
                 </ul>
             </div>
+            <div className="contact-bottom"></div>
         </>
     );
 };

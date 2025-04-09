@@ -5,6 +5,24 @@
   --text-color: #ffffff;
 }
 
+.home-background-container2 {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 290px;
+  width: 80%;
+  height: 100vh;
+  pointer-events: none;
+  /* So it doesn't interfere with clicking other elements */
+  z-index: 0;
+  /* Make sure it's behind everything else */
+  justify-content: center;
+  /* Centers the content horizontally */
+  align-items: center;
+  /* Centers the content vertically */
+}
+
+
 .services-container {
   padding-top: 200px;
   width: 50%;
@@ -31,8 +49,18 @@
   font-size: 18px;
   color: #ffffff;
   font-family: Comfortaa, sans-serif;
-  padding-left: 96px;
-  padding-bottom: 48px;
+  margin-left: 96px;
+  background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  /* Apply blur effect to the background */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari */
+  border-radius: 10px;
+  /* Optional: rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional: shadow for depth */
 }
 
 .breakpoint {
@@ -43,9 +71,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 96px;
-  padding-right: 96px;
-  padding-bottom: 200px;
+  margin-left: 96px;
+  margin-right: 96px;
+  margin-bottom: 200px;
 }
 
 .services-summary-heading {
@@ -61,7 +89,18 @@
   font-size: 18px;
   color: #ffffff;
   font-family: Comfortaa, sans-serif;
-  padding-bottom: 96px;
+  margin-bottom: 46px;
+   background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  /* Apply blur effect to the background */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari */
+  border-radius: 10px;
+  /* Optional: rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional: shadow for depth */
 }
 
 .service-title {
@@ -170,12 +209,12 @@
   color: #ffffff;
   font-family: Comfortaa, sans-serif;
   padding-left: 48px;
-  padding-bottom: 200px;
+  margin-bottom: 200px;
 }
 
 .CV-list-item-header {
   font-size: 24px;
-  font-family: Comfortaa, sans-serif;
+  font-family: Inter, sans-serif;
   display: flex;
   align-items: center;
   gap: 20px;

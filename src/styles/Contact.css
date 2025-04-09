@@ -5,6 +5,28 @@
   --text-color: #ffffff;
 }
 
+.contact-bottom {
+  width: 100%;
+  height: 100px;
+}
+
+.home-background-container2 {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 290px;
+  width: 80%;
+  height: 100vh;
+  pointer-events: none;
+  /* So it doesn't interfere with clicking other elements */
+  z-index: 0;
+  /* Make sure it's behind everything else */
+  justify-content: center;
+  /* Centers the content horizontally */
+  align-items: center;
+  /* Centers the content vertically */
+}
+
 .contact-container {
   padding-top: 200px;
   width: 50%;
@@ -86,11 +108,17 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  padding: 0;
+  justify-content: space-evenly;
   gap: 50px;
-  padding-bottom: 196px;
-  margin-top: 76px;
+  margin: 100px auto 0px auto; /* Center vertically with top & bottom spacing */
+  padding: 100px; /* Inner padding for content spacing */
+  max-width: calc(100vw - 96px); /* 50px on each side */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-list .contact-tile {
