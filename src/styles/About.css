@@ -268,12 +268,13 @@
   }
   
   .about-text {
+    max-width: calc(100vw - 40px); /* 50px on each side */
     font-size: 18px;
     color: #ffffff;
     font-family: Comfortaa, sans-serif;
     margin: 0 auto; /* Centers the text */
     text-align: left;
-    padding: 0 20px; /* Adds padding for smaller screens */
+    padding: 20px 20px; /* Adds padding for smaller screens */
   }
   
   .core-values {
@@ -307,8 +308,9 @@
     text-align: left;
     padding: 0 20px;
     margin: 0; /* Reduced from 200px */
-    margin-bottom: 40px;
-    width: 100%; /* Control width for better mobile layout */
+    padding: 20px 20px; /* Added padding for better spacing */
+    margin: 50px 20px 100px 20px; /* Adjusted margin for mobile */
+    max-width: calc(100vw - 40px); /* 50px on each side */
   }
   
   /* Fix list display for mobile */
@@ -374,15 +376,6 @@
     border-radius: 50%;
   }
   
-  .core-values-text {
-    font-size: 18px;
-    color: #ffffff;
-    font-family: Comfortaa, sans-serif;
-    text-align: center;
-    margin: 0 auto; /* Centers the text */
-    padding-left: 0;
-  }
-  
   div.CV-list-item-header {
     font-size: 24px;
     font-family: Comfortaa, sans-serif;
@@ -390,16 +383,16 @@
     align-items: center;
     margin-bottom: 0px;
     font-weight: 700;
-    color: var(--columbia-blue);
+    color: white;
   }
   
   p.CV-list-item-text {
-    font-size: 16px;
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
-    padding-left: 0px;
-    padding-bottom: 30px;
-    line-height: 1.5;
+    text-align: left;
+    padding: 0 20px;
+    margin: 0; /* Reduced from 200px */
+    padding: 20px 20px; /* Added padding for better spacing */
+    margin: 0px 20px 100px 20px; /* Adjusted margin for mobile */
+    max-width: calc(100vw - 40px); /* 50px on each side */
   }
   
   @keyframes spin {

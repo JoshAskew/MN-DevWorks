@@ -341,6 +341,7 @@
     align-items: center;
     justify-content: center;
     padding: 80px 0 100px 0; /* Center vertically with top & bottom spacing */
+    max-width: calc(100vw - 96px); /* 50px on each side */
     gap: 80px;
   }
 
