@@ -63,6 +63,24 @@
   /* Optional: shadow for depth */
 }
 
+.work-btn3 {
+  color: #000000;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 96px;
+  margin-bottom: 48px;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 25px;
+  border: 1px solid #1E6D31;
+  background: linear-gradient(90deg, #61FF7E 0%, #39D05C 100%);
+  z-index: 1;
+}
+
 .breakpoint {
   font-family: Tektur, sans-serif;
 }
