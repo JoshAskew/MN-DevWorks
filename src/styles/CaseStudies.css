@@ -4,24 +4,6 @@
   --raisin-black: #282828;
   --text-color: #ffffff;
 }
-
-.home-background-container2 {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 290px;
-  width: 80%;
-  height: 100vh;
-  pointer-events: none;
-  /* So it doesn't interfere with clicking other elements */
-  z-index: 0;
-  /* Make sure it's behind everything else */
-  justify-content: center;
-  /* Centers the content horizontally */
-  align-items: center;
-  /* Centers the content vertically */
-}
-
 .case-container {
     padding-top: 200px;
     width: 60%;
